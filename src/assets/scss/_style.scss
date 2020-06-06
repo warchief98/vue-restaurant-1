@@ -1,0 +1,260 @@
+/* ______________________________________________________ main header */
+
+.main-header {
+    padding: 24px 0 0 0;
+    .main-search {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            height: 16px;
+            transform: translateY(-50%);
+            position: absolute;
+            top: 50%;
+            left: 30px;
+        }
+        input {
+            width: 100%;
+            height: 36px;
+            padding: 0 0 0 40px;
+            background-color: #F2F5FC;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+        }
+    }
+    .menu-btn {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        img {
+            width: 30px;
+        }
+    }
+}
+
+
+/* navigation component */
+
+.navigation {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #031B40;
+    height: 72px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+    a {
+        position: relative;
+        &.router-link-exact-active {
+            &::before {
+                content: "";
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                position: absolute;
+                bottom: -15px;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: #07c1f6;
+            }
+        }
+    }
+}
+
+
+/* _______________________________________________________ main title */
+
+.main-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 15px 0;
+        h2 {
+            font-weight: bold;
+            margin: 0 10px 0 10px;
+        }
+    }
+}
+
+
+/* _________________________________________________________market component */
+
+.all-roll {
+    width: max-content;
+    display: flex;
+}
+
+.market-card {
+    width: 230px;
+    margin-right: 10px;
+    position: relative;
+    border: 1px solid #F2F5FC;
+    border-radius: 7px;
+    figure {
+        /* border-radius: 7px;
+            overflow: hidden; */
+        position: relative;
+        img {
+            width: 100%;
+        }
+    }
+    .market-info {
+        list-style-type: none;
+        padding-left: 5px;
+        text-align: left;
+        li {
+            color: #2F3033;
+            &:first-child {
+                font-weight: bold;
+            }
+            &:last-child {
+                padding-left: 11px;
+            }
+        }
+    }
+}
+
+.comming-soon {
+    .market-info {
+        li {
+            img {
+                filter: grayscale(1);
+            }
+        }
+    }
+    figure {
+        &::after {
+            content: "Comming Soon";
+            position: absolute;
+            top: 15px;
+            left: -5px;
+            width: 65px;
+            height: 18px;
+            background-color: #031B40;
+            color: white;
+            font-size: 7px;
+            line-height: 18px;
+            padding-left: 2px;
+            clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 0 100%);
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #031b4060;
+        }
+    }
+}
+
+
+/* _______________________________________________sell card component */
+
+.today-hot,
+.product-card {
+    width: 110px;
+    margin-right: 10px;
+    figure {
+        position: relative;
+        img {
+            width: 100%;
+        }
+    }
+    h4 {
+        font-weight: bold;
+        margin: 0;
+    }
+}
+
+.discount {
+    figure {
+        &::before {
+            content: url(../../assets/icons/discount.png);
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            top: -3px;
+            left: -2px;
+        }
+    }
+}
+
+.rate {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    p {
+        margin: 0;
+        color: #26C99A;
+    }
+    img {
+        margin-right: 5px;
+    }
+}
+
+
+/* ____________________________next page (todays hot) */
+
+.todays-hot-card {
+    margin-bottom: 20px;
+    figure {
+        position: relative;
+        border-radius: 7px;
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.todays-hot-info {
+    p {
+        text-align: left;
+    }
+    .div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.discount2 {
+    display: flex;
+    justify-content: flex-start !important;
+    align-items: center !important;
+}
+
+
+/* ________________________________________________________________________________ */
+
+
+/* ____________________________next page (select food) */
+
+.select-food-main {
+    div {
+        &:first-child {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    p {
+        text-align: left;
+    }
+    .info-pop-1 {
+        max-height: 72px;
+        overflow-y: auto;
+        padding: 5px 10px 3px 8px;
+        border-radius: 7px;
+    }
+}

@@ -1,0 +1,66 @@
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+@import './style.scss';
+@import './select-food';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-wrapper {
+    position: relative;
+    padding-bottom: 75px;
+}
+
+.lower-marsh {
+    overflow: hidden;
+}
+
+.todays-hot {
+    overflow: hidden;
+}
+
+.product {
+    overflow: hidden;
+}
+
+.fz-20 {
+    font-size: 20px;
+}
+
+.fz-18 {
+    font-size: 18px;
+}
+
+.fz-15 {
+    font-size: 15px;
+}
+
+.fz-13 {
+    font-size: 13px;
+}
+
+.fz-12 {
+    font-size: 12px;
+}
+
+.fz-10 {
+    font-size: 10px;
+}
+
+.dark-text-color {
+    color: #031B40;
+}
+
+.gray-text-color {
+    color: #909399;
+}
+
+.gray-bg {
+    background-color: #F2F5FC;
+}
+
+.discount-text-color {
+    color: #C93A5C;
+}
