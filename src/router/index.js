@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Landing from '../views/Landing.vue'
 import LowerMarket from '../views/LowerMarket/index.vue'
 import LowerMarketInfo from '../views/LowerMarket/SelectFood/index.vue'
+import login from '../views/login.vue'
 
 Vue.use(VueRouter)
 
@@ -20,6 +21,11 @@ const routes = [{
         path: '/Landing/LowerMarket/SelectFood',
         name: 'LowerMarketInfo',
         component: LowerMarketInfo
+    },
+    {
+        path: '/login',
+        name: 'login',
+        component: login
     }
 ]
 

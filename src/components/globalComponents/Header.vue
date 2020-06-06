@@ -12,8 +12,9 @@
                 <div class="col-2 menu-btn">
                     <img src="@/assets/icons/menu-btn.png" alt="">
                 </div>
-
             </div>
+            <!-- .all-blue-menu is a class for another theme of app-menu component -->
+            <app-menu class=""></app-menu>
         </div>
 </template>
 

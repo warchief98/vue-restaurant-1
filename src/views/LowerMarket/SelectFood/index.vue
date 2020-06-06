@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid">
+  <div>
     <div class="container-fluid m-0 p-0">
       <figure class="header-pic">
         <img src="@/assets/images/header-pic.jpg" alt />
@@ -10,7 +10,7 @@
         </figcaption>
       </figure>
     </div>
-
+<div class="container-fluid">
     <div class="container-fluid select-food-main">
       <div>
         <h3 class="fz-20">Hungry Llama</h3>
@@ -43,6 +43,7 @@
     <div class="container-fluid gray-bg">
       <h2 class="fz-15 dark-text-color py-3 text-left">Cold Drinks</h2>
     </div>
+  </div>
   </div>
 </template>
 

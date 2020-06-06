@@ -1,6 +1,7 @@
 @import 'node_modules/bootstrap/scss/bootstrap';
 @import 'node_modules/bootstrap-vue/src/index.scss';
 @import './style.scss';
+@import './login';
 @import './select-food';
 * {
     margin: 0;
@@ -49,6 +50,7 @@
     font-size: 10px;
 }
 
+// color classes
 .dark-text-color {
     color: #031B40;
 }
@@ -63,4 +65,16 @@
 
 .discount-text-color {
     color: #C93A5C;
+}
+
+.darkBlue-bg {
+    background-color: #031b41;
+}
+
+.blue-bg {
+    background-color: #4167b2 !important;
+}
+
+.lightBlue-bg {
+    background-color: #07c0f6;
 }
