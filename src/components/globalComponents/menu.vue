@@ -21,8 +21,10 @@
         SORTING
       </li>
       <li>
+        <router-link to="/Account">
         <img src="@/assets/icons/account-icon.png" alt />
         ACCOUNT
+        </router-link>
       </li>
       <li>
         <img src="@/assets/icons/order-icon.png" alt />
@@ -37,6 +39,14 @@
         SHARE
       </li>
     </ul>
+
+    <!-- ________________________________pop up component import -->
+    <!-- dietary pp up -->
+    <!-- <dietary-pop></dietary-pop> -->
+    <!-- sorting-1 pop up -->
+    <!-- <sorting-pop-1></sorting-pop-1> -->
+    <!-- sorting-2 pop up -->
+    <sorting-pop-2></sorting-pop-2>
   </div>
 </template>
 

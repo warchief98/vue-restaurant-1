@@ -28,6 +28,7 @@
 <script>
 import marketCard from "@/components/localComponents/LowerMarketCard";
 export default {
+  name:'LowerMarket',
   components: {
     marketCard: marketCard
   }

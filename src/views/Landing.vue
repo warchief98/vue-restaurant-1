@@ -64,6 +64,13 @@
       </div>
       <!-- ________________________________________________navigation menu -->
       <app-nav></app-nav>
+
+      <!--_______________________________________________________ dark cover -->
+      <div class="dark-cover"></div>
+
+      <!--_______________________________________________________ market pop up -->
+      <market-pop-up></market-pop-up>
+
     </div>
   </div>
 </template>
@@ -72,12 +79,14 @@
 import MarketCard from "../components/localComponents/MarketCard";
 import TodaysHot from "../components/localComponents/TodaysHot";
 import Product from "../components/localComponents/Product";
+import MarketPopUp from "../components/localComponents/MarketPopUp";
 export default {
   name: "Home",
   components: {
     MarketCard: MarketCard,
     TodaysHot: TodaysHot,
-    Product:Product,
+    Product: Product,
+    MarketPopUp: MarketPopUp
   }
 };
 </script>

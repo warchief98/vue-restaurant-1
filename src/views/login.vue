@@ -31,13 +31,15 @@
       <p class="fz-12 gray-text-color text-left my-2">Your phone number is kept confidentional and not shares with others</p>
 
       <!-- Continue btn -->
-      <button class="continue-btn lightBlue-bg my-2 fz-15">Continue</button>
+      <button class="submit-btn lightBlue-bg my-2 fz-15">Continue</button>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  name:'login'
+};
 </script>
 
 <style>

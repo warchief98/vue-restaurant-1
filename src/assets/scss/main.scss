@@ -14,6 +14,15 @@
     padding-bottom: 75px;
 }
 
+.submit-btn {
+    outline: none !important;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 45px;
+}
+
 .lower-marsh {
     overflow: hidden;
 }
@@ -32,6 +41,10 @@
 
 .fz-18 {
     font-size: 18px;
+}
+
+.fz-16 {
+    font-size: 16px;
 }
 
 .fz-15 {
