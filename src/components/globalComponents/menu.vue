@@ -6,8 +6,8 @@
         <img src="@/assets/icons/userAvatar.png" alt />
       </figure>
       <section>
-        <h3>John Doe</h3>
-        <p>john.doe@gmail.com</p>
+        <h3 class="fz-15">John Doe</h3>
+        <p class="fz-12">john.doe@gmail.com</p>
       </section>
     </div>
     <!-- menu section -->
@@ -25,7 +25,7 @@
         ACCOUNT
       </li>
       <li>
-        <img src="@/assets/icons/menu-icon-3.png" alt />
+        <img src="@/assets/icons/order-icon.png" alt />
         ORDER HISTORY
       </li>
       <li>

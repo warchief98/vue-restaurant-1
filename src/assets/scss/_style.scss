@@ -275,6 +275,12 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
+        padding: 40px 0 15px 0;
+        section {
+            h3 {
+                font-weight: bold;
+            }
+        }
         * {
             margin: 0;
             text-align: left;
@@ -294,6 +300,9 @@
             padding: 15px 0;
             border-bottom: 1px solid silver;
             font-size: 12px;
+            &:last-child {
+                border: none;
+            }
             @extend .gray-text-color;
             img {
                 filter: brightness(0.5);
