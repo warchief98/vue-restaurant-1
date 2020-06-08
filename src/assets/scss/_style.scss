@@ -246,6 +246,10 @@
         }
         /* ____________________________next page (menu) */
         
+        .menuCome {
+            transform: translate(0) !important;
+        }
+        
         .menu {
             position: fixed;
             width: 100%;
@@ -254,12 +258,13 @@
             height: 100vh;
             top: 0;
             left: 0;
-            transform: translateX(0%);
+            transform: translateX(100%);
+            transition: 0.5s;
             .menu-head {
                 display: flex;
-                justify-content: flex-start;
+                justify-content: space-between;
                 align-items: center;
-                padding: 40px 0 15px 0;
+                padding: 40px 15px 15px 15px;
                 section {
                     h3 {
                         font-weight: bold;
@@ -374,12 +379,162 @@
             }
         }
         
+        //_____________________________Account Details page style
+        .Account-details {
+            .Account-head {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-flow: column;
+                padding: 20px 0 15px 0;
+                figure {
+                    width: 25%;
+                    margin-bottom: 10px;
+                    img {
+                        width: 100%;
+                    }
+                }
+                section {
+                    h3 {
+                        font-weight: bold;
+                    }
+                }
+                * {
+                    margin: 0;
+                }
+            }
+            .Account-head-title {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-flow: row nowrap;
+                padding: 6px 15px;
+                img {
+                    width: 18px;
+                    transform: rotate(180deg);
+                }
+            }
+            .form-Details {
+                width: 100%;
+                ul {
+                    width: 100%;
+                    padding: 0 35px;
+                    li {
+                        width: 100%;
+                        flex-flow: column;
+                        justify-content: center;
+                        text-align: left;
+                        padding: 10px 0;
+                        font-size: 15px;
+                        .header {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            font-size: 16px;
+                            div {
+                                p {
+                                    color: silver;
+                                    margin: 0;
+                                    font-size: 14px;
+                                    padding: 0 5px;
+                                }
+                            }
+                        }
+                        .information-user {
+                            border-bottom: 1px solid silver;
+                            color: silver;
+                            font-size: 16px;
+                            margin: 0;
+                        }
+                    }
+                }
+                footer {
+                    padding: 0 35px;
+                    h3 {
+                        text-align: left;
+                    }
+                    ul {
+                        padding: 0;
+                        li {
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            flex-flow: row nowrap;
+                            .disconnect {
+                                background: #c9751b;
+                                color: white;
+                                border: none;
+                                outline: none;
+                                padding: 5px 7px;
+                                border-radius: 5px;
+                                font-weight: normal;
+                            }
+                            P {
+                                font-size: 10px;
+                                color: silver;
+                                border: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        //_______________________________AccountDetails-pop style
+        .accountDetails-pop {
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: white;
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+            align-items: center;
+            header {
+                width: 100%;
+                .close-box {
+                    width: 100%;
+                    padding: 10px 15px 0;
+                    display: flex;
+                    justify-content: flex-end;
+                }
+                .forms {
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start;
+                    flex-flow: column;
+                    width: 100%;
+                    padding: 10px 35px;
+                    input {
+                        width: 100%;
+                        border-radius: 5px;
+                        background: #f2f5fc;
+                        border: none;
+                        padding: 3px;
+                        color: silver;
+                    }
+                }
+            }
+            footer {
+                width: 100%;
+            }
+        }
+        
         // ___________________________________________________menu pop up style(next page)
+        .pop-up-container-come {
+            transform: translateY(0) !important;
+        }
+        
         .pop-up-container {
             position: fixed;
             z-index: 20;
             bottom: 0;
             left: 0;
+            transform: translateY(100%);
             width: 100%;
             height: 60vh;
             min-height: 300px;
@@ -390,6 +545,7 @@
             justify-content: space-between;
             align-items: center;
             border-radius: 7px 7px 0 0;
+            transition: 0.5s;
             header {
                 width: 100%;
                 border-bottom: 1px solid silver;
@@ -519,6 +675,15 @@
                 ul {
                     padding-bottom: 0;
                 }
+            }
+            .Account-select-box {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+                justify-content: space-evenly;
+                padding: 30px 20px;
             }
         }
         

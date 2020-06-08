@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="dark-cover"></div>
-    <div class="pop-up-container">
+    <div class="dark-cover" v-if="dietaryShow"></div>
+    <div class="pop-up-container" :class="{'pop-up-container-come':dietaryShow}">
       <header>
         <h2 class="fz-18">Dietary</h2>
       </header>
@@ -32,18 +32,26 @@
         </li>
       </ul>
       <footer class="container-fluid">
-        <button class="submit-btn lightBlue-bg mb-1">Apply</button>
+        <button class="submit-btn lightBlue-bg mb-1" @click="dietaryClose">Apply</button>
       </footer>
     </div>
   </div>
 </template>
 
 <script>
+import { eventBus } from '@/main.js';
+
 export default {
+  props:['dietaryShow'],
     data(){
         return{
             dietValue:"",
         }
+    },
+    methods:{
+      dietaryClose(){
+        eventBus.$emit('dietaryClose',false)
+      }
     }
 };
 </script>
