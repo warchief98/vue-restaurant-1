@@ -1,4 +1,4 @@
-# hym-express
+# build
 
 ## Project setup
 ```
