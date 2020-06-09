@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+ul {
+    list-style-type: none;
+}
+
 .main-wrapper {
     position: relative;
     padding-bottom: 75px;
@@ -23,6 +27,23 @@
     height: 45px;
 }
 
+.done-btn {
+    color: #07c0f6;
+    background: white;
+    border: none;
+    outline: none !important;
+}
+
+.select-btn {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: white;
+    color: black;
+    padding: 10px;
+    font-size: 13px;
+}
+
 .lower-marsh {
     overflow: hidden;
 }
@@ -33,6 +54,10 @@
 
 .product {
     overflow: hidden;
+}
+
+.fz-30 {
+    font-size: 30px;
 }
 
 .fz-20 {

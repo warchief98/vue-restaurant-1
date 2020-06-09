@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="dark-cover"></div>
-    <div class="pop-up-container">
+    <div class="dark-cover" v-if="sorting1"></div>
+    <div class="pop-up-container" :class="{'pop-up-container-come':sorting1}">
       <header>
         <h2 class="fz-16">Sorting</h2>
       </header>
@@ -37,14 +37,17 @@
         </ul>
       </div>
       <footer class="container-fluid">
-        <button class="submit-btn lightBlue-bg mb-1">Apply</button>
+        <button class="submit-btn lightBlue-bg mb-1" @click="sortingClose1">Apply</button>
       </footer>
     </div>
   </div>
 </template>
 
 <script>
+import { eventBus } from '@/main.js';
+
 export default {
+  props:['sorting1'],
   data() {
     return {
       dietValue: "",
@@ -56,7 +59,12 @@ export default {
         { text: "£££", value: "radio3" }
       ]
     };
-  }
+  },
+    methods:{
+      sortingClose1(){
+        eventBus.$emit('sortingClose1',false)
+      }
+    }
 };
 </script>
 
