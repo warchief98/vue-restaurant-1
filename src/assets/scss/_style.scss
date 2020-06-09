@@ -367,6 +367,7 @@
                     text-align: left;
                     padding: 18px 0 18px 0;
                     border-bottom: none;
+                    color: black;
                     a {
                         @extend .dark-text-color;
                         width: 100%;
@@ -398,23 +399,32 @@
                 flex-flow: column;
                 padding: 20px 0 15px 0;
                 figure {
-                    width: 70px;
-                    height: 70px;
+                    width: 88px;
+                    height: 88px;
                     border-radius: 50%;
                     margin-bottom: 10px;
                     position: relative;
+                    margin-bottom: 10px;
                     img {
                         width: 100%;
                         transform: scale(1);
+                        margin: 0;
                     }
-                    figcaption {
+                    .profile-btn {
                         position: absolute;
-                        width: 15px;
-                        height: 15px;
-                        bottom: 3px;
-                        left: 8px;
+                        width: 32px;
+                        height: 32px;
+                        background-color: white;
+                        box-shadow: 0 0 5px rgba(0, 0, 0, 0.433);
+                        border-radius: 50%;
+                        bottom: -6px;
+                        left: -3px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                         img {
                             width: 100%;
+                            width: 50%;
                         }
                     }
                 }
@@ -458,11 +468,14 @@
                             justify-content: space-between;
                             align-items: center;
                             font-size: 16px;
+                            h3 {
+                                font-weight: bold;
+                            }
                             div {
                                 p {
-                                    color: silver;
+                                    @extend .gray-text-color;
                                     margin: 0;
-                                    font-size: 14px;
+                                    font-size: 11px;
                                     padding: 0 5px;
                                 }
                             }
@@ -470,8 +483,8 @@
                         .information-user {
                             width: 100%;
                             border-bottom: 1px solid silver;
-                            color: silver;
-                            font-size: 16px;
+                            @extend .gray-text-color;
+                            font-size: 14px;
                             margin: 0;
                         }
                     }
@@ -480,6 +493,7 @@
                     padding: 0 35px;
                     h3 {
                         text-align: left;
+                        font-weight: bold;
                     }
                     ul {
                         padding: 0;
@@ -489,6 +503,7 @@
                             justify-content: space-between;
                             align-items: center;
                             flex-flow: row nowrap;
+                            font-weight: bold;
                             .disconnect {
                                 background: #c9751b;
                                 color: white;
@@ -499,7 +514,6 @@
                                 font-weight: normal;
                             }
                             P {
-                                font-size: 10px;
                                 color: silver;
                                 border: none;
                             }

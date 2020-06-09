@@ -17,7 +17,7 @@
     <ul>
       <li @click="AccountDetails = !AccountDetails">Account Details</li>
       <li>Payment Methods</li>
-      <li @click="About = !About">Adout</li>
+      <li @click="About = !About">About</li>
       <li>Help</li>
       <li>Sing Out</li>
     </ul>

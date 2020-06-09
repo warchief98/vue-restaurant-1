@@ -5,15 +5,15 @@
       <figure @click="AccountDetailsClose">
         <img src="@/assets/icons/right-arrow.png" alt />
       </figure>
-      <h1 class="fz-18 m-0">Account Details</h1>
+      <h1 class="fz-15 m-0">Account Details</h1>
       <button class="done-btn">Done</button>
     </div>
     <div class="Account-head">
       <figure>
         <img src="@/assets/icons/userAvatar.png" alt />
         <!-- edit profile's picture btn -->
-        <figcaption @click="AccountDetails1 = !AccountDetails1">
-          <img src="@/assets/icons/google-icon.png" alt="">
+        <figcaption @click="AccountDetails1 = !AccountDetails1" class="profile-btn">
+          <img src="@/assets/icons/profile-btn-icon.png" alt="">
         </figcaption>
       </figure>
       <section>
@@ -57,21 +57,21 @@
         </li>
       </ul>
       <footer>
-        <h3 class="fz-15 font-weight-normal">Social Account</h3>
+        <h3 class="fz-15">Social Account</h3>
         <ul>
           <li>
-            <div>
+            <div class="fz-15">
               <img src="@/assets/icons/facebook-icon.png" alt />
               Facebook
             </div>
             <button class="disconnect fz-12">Disconnect</button>
           </li>
           <li>
-            <div>
+            <div class="fz-15">
               <img src="@/assets/icons/google-icon.png" alt />
               Google
             </div>
-            <p class="fz-10 m-0">Not Connected</p>
+            <p class="fz-11 m-0">Not Connected</p>
           </li>
         </ul>
       </footer>

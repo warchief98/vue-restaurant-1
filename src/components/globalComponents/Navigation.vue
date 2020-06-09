@@ -13,7 +13,7 @@
       </router-link>
     </div>
     <div class="navi-items">
-      <router-link to="/page3">
+      <router-link to="/Landing/LowerMarket">
         <img src="@/assets/icons/menu-icon-3.png" alt />
       </router-link>
     </div>
