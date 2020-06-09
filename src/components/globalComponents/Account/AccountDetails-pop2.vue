@@ -1,8 +1,8 @@
 <template>
-  <div class="accountDetails-pop">
+  <div class="accountDetails-pop" :class="{'accountDetails-come' : AccountDetails2}">
     <header>
       <div class="close-box">
-        <button class="done-btn fz-30">×</button>
+        <button class="done-btn fz-30" @click="AccountDetailsClose">×</button>
       </div>
       <div class="forms">
         <label class="fz-15" for="name">Enter your first name</label>
@@ -17,11 +17,19 @@
 </template>
 
 <script>
+import { eventBus } from '@/main.js'
+
 export default {
+  props:['AccountDetails2'],
   data() {
     return {
       firstName: ""
     };
+  },
+  methods:{
+    AccountDetailsClose(){
+      eventBus.$emit('AccountDetailsClose2' , false)
+    }
   }
 };
 </script>

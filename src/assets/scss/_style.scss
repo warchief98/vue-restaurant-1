@@ -1,7 +1,12 @@
         /* ______________________________________________________ main header */
         
         .main-header {
-            padding: 24px 0 0 0;
+            padding: 24px 15px 12px 15px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: white;
+            z-index: 6;
             .main-search {
                 position: relative;
                 display: flex;
@@ -253,13 +258,13 @@
         .menu {
             position: fixed;
             width: 100%;
-            background: white;
             z-index: 10;
             height: 100vh;
             top: 0;
             left: 0;
             transform: translateX(100%);
             transition: 0.5s;
+            @extend .darkBlue-bg;
             .menu-head {
                 display: flex;
                 justify-content: space-between;
@@ -289,46 +294,38 @@
                     padding: 15px 0;
                     border-bottom: 1px solid silver;
                     font-size: 12px;
-                    @extend .gray-text-color;
+                    color: white;
                     &:last-child {
-                        border: none;
+                        border-bottom: none;
                     }
                     a {
                         width: 100%;
                         display: inline-block;
                         text-decoration: none;
-                        @extend .gray-text-color;
+                        font-size: 12px;
+                        color: white;
                     }
                     img {
-                        filter: brightness(0.5);
                         margin: 0 10px 0 0;
                     }
                 }
             }
         }
         
-        .all-blue-menu {
-            ul {
-                @extend .darkBlue-bg;
-                li {
-                    color: white !important;
-                    img {
-                        filter: brightness(1);
-                    }
-                }
-            }
-            .menu-head {
-                img {
-                    margin: 0 15px 0 35px;
-                }
-            }
+        //--------------------next page Account
+        .Account-come {
+            transform: translateY(0) !important;
         }
         
-        //--------------------next page Account
         .Account {
             width: 100%;
             height: 100vh;
             background: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            transform: translateY(100%);
+            transition: .5s;
             .back-arrow {
                 display: flex;
                 justify-content: start;
@@ -369,6 +366,7 @@
                     border-top: 1px solid silver;
                     text-align: left;
                     padding: 18px 0 18px 0;
+                    border-bottom: none;
                     a {
                         @extend .dark-text-color;
                         width: 100%;
@@ -380,7 +378,19 @@
         }
         
         //_____________________________Account Details page style
+        .Account-details-come {
+            transform: translateY(0) !important;
+        }
+        
         .Account-details {
+            width: 100%;
+            height: 100vh;
+            background: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            transform: translateY(100%);
+            transition: .5s;
             .Account-head {
                 display: flex;
                 justify-content: center;
@@ -388,10 +398,24 @@
                 flex-flow: column;
                 padding: 20px 0 15px 0;
                 figure {
-                    width: 25%;
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
                     margin-bottom: 10px;
+                    position: relative;
                     img {
                         width: 100%;
+                        transform: scale(1);
+                    }
+                    figcaption {
+                        position: absolute;
+                        width: 15px;
+                        height: 15px;
+                        bottom: 3px;
+                        left: 8px;
+                        img {
+                            width: 100%;
+                        }
                     }
                 }
                 section {
@@ -424,10 +448,12 @@
                         width: 100%;
                         flex-flow: column;
                         justify-content: center;
-                        text-align: left;
+                        align-items: flex-start;
                         padding: 10px 0;
                         font-size: 15px;
+                        border: none;
                         .header {
+                            width: 100%;
                             display: flex;
                             justify-content: space-between;
                             align-items: center;
@@ -442,6 +468,7 @@
                             }
                         }
                         .information-user {
+                            width: 100%;
                             border-bottom: 1px solid silver;
                             color: silver;
                             font-size: 16px;
@@ -483,17 +510,23 @@
         }
         
         //_______________________________AccountDetails-pop style
+        .accountDetails-come {
+            transform: translateY(0) !important;
+        }
+        
         .accountDetails-pop {
             width: 100%;
             height: 100vh;
             position: fixed;
             top: 0;
             left: 0;
+            transform: translateY(100%);
             background: white;
             display: flex;
             flex-flow: column;
             justify-content: space-between;
             align-items: center;
+            transition: .5s;
             header {
                 width: 100%;
                 .close-box {
@@ -521,6 +554,49 @@
             }
             footer {
                 width: 100%;
+            }
+        }
+        
+        // ____________________________________________________about style
+        .about-come {
+            transform: translateY(0) !important;
+        }
+        
+        .about {
+            background-color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            transform: translateY(100%);
+            transition: 0.5s;
+            .about-head-title {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-flow: row nowrap;
+                padding: 6px 15px;
+                position: relative;
+                figure {
+                    margin: 0;
+                    position: absolute;
+                    left: 15px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    img {
+                        width: 18px;
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+            ul {
+                padding: 15px 35px 0;
+                li {
+                    border-top: none;
+                    border-bottom: 1px solid silver;
+                }
             }
         }
         

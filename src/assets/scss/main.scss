@@ -13,9 +13,14 @@ ul {
     list-style-type: none;
 }
 
+p {
+    margin: 0;
+}
+
 .main-wrapper {
     position: relative;
     padding-bottom: 75px;
+    padding-top: 60px;
 }
 
 .submit-btn {
@@ -32,6 +37,14 @@ ul {
     background: white;
     border: none;
     outline: none !important;
+}
+
+.closeMenu-btn {
+    background: transparent;
+    color: white;
+    border: none;
+    outline: none !important;
+    font-size: 35px;
 }
 
 .select-btn {
