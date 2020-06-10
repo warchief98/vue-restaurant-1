@@ -9,10 +9,11 @@
     </div>
 
     <ul>
-      <li>Rating & Reviews</li>
+      <li @click="RatingAndReviews = true">Rating & Reviews</li>
       <li>FAQs</li>
       <li>Legal</li>
     </ul>
+    <rating-reviews :RatingAndReviews="RatingAndReviews"></rating-reviews>
   </div>
 </template>
 
@@ -21,10 +22,20 @@ import { eventBus } from '@/main.js'
 
 export default {
   props:['About'],
+  data(){
+    return{
+      RatingAndReviews:false,
+    }
+  },
   methods:{
     aboutClose(){
       eventBus.$emit('aboutClose',false)
     }
+  },
+  created(){
+    eventBus.$on('Rating&ReviewsClose', (close) =>{
+      this.RatingAndReviews = close
+    })
   }
 };
 </script>

@@ -17,6 +17,9 @@ import AccountDetailsPop2 from './components/globalComponents/Account/AccountDet
 import AccountDetailsPop3 from './components/globalComponents/Account/AccountDetails-pop3.vue'
 import AccountDetailsPop4 from './components/globalComponents/Account/AccountDetails-pop4.vue'
 import About from './components/globalComponents/Account/About/About.vue'
+import RatingAndReviews from './components/globalComponents/Account/About/Rating&Reviews.vue'
+import writeReviews from './components/globalComponents/Account/About/write-A-Review.vue'
+
 
 
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
@@ -35,6 +38,8 @@ Vue.component('AccountDetails-pop2', AccountDetailsPop2)
 Vue.component('AccountDetails-pop3', AccountDetailsPop3)
 Vue.component('AccountDetails-pop4', AccountDetailsPop4)
 Vue.component('account-about', About)
+Vue.component('rating-reviews', RatingAndReviews)
+Vue.component('write-reviews', writeReviews)
 
 // Install BootstrapVue
 Vue.use(BootstrapVue)
