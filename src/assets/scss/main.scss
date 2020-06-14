@@ -44,6 +44,7 @@ p {
     background: transparent;
     border: none;
     outline: none !important;
+    cursor: pointer;
 }
 
 .closeMenu-btn {
@@ -52,6 +53,7 @@ p {
     border: none;
     outline: none !important;
     font-size: 35px;
+    cursor: pointer;
 }
 
 .select-btn {
@@ -62,6 +64,10 @@ p {
     color: black;
     padding: 10px;
     font-size: 13px;
+}
+
+.over-flow {
+    overflow: hidden;
 }
 
 .lower-marsh {
@@ -94,6 +100,10 @@ p {
 
 .fz-15 {
     font-size: 15px;
+}
+
+.fz-14 {
+    font-size: 14px;
 }
 
 .fz-13 {

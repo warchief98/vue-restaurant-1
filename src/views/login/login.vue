@@ -8,7 +8,7 @@
     </div>
 
     <div class="container-fluid login-btns">
-      <h2 class="m-0 fz-20">Sign into YHM Express</h2>
+      <h2 class="m-0 fz-20">Sign into YMH Express</h2>
       <p class="fz-13">Please log in with</p>
       <!-- facebook login -->
       <button class="login-btn blue-bg text-white my-2">

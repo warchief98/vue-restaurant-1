@@ -10,10 +10,11 @@
 
     <ul>
       <li @click="RatingAndReviews = true">Rating & Reviews</li>
-      <li>FAQs</li>
+      <li @click="FAQs = !FAQs">FAQs</li>
       <li>Legal</li>
     </ul>
-    <rating-reviews :RatingAndReviews="RatingAndReviews"></rating-reviews>
+    <rating-reviews v-show="RatingAndReviews" :RatingAndReviews="RatingAndReviews"></rating-reviews>
+    <FAQs v-show="FAQs" :FAQs="FAQs"></FAQs>
   </div>
 </template>
 
@@ -25,6 +26,7 @@ export default {
   data(){
     return{
       RatingAndReviews:false,
+      FAQs:false,
     }
   },
   methods:{
@@ -35,6 +37,9 @@ export default {
   created(){
     eventBus.$on('Rating&ReviewsClose', (close) =>{
       this.RatingAndReviews = close
+    })
+     eventBus.$on('FAQsClose', (close) =>{
+      this.FAQs = close
     })
   }
 };
