@@ -1,6 +1,7 @@
 @import 'node_modules/bootstrap/scss/bootstrap';
 @import 'node_modules/bootstrap-vue/src/index.scss';
 @import './style.scss';
+@import './style2.scss';
 @import './login';
 @import './select-food';
 * {
@@ -127,6 +128,10 @@ p {
 
 .discount-text-color {
     color: #C93A5C;
+}
+
+.lightBrown-color {
+    color: #C9751C;
 }
 
 .darkBlue-bg {

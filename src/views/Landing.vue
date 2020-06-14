@@ -6,16 +6,13 @@
         <!-- ________________________________________________LowerMarsh block -->
         <div class="container-fluid lower-marsh">
           <!-- main-title -->
-          <router-link to="/Landing/LowerMarket" class="main-title">
+          <div class="main-title">
             <div>
               <img src="@/assets/icons/TodaysHotIcon.png" alt class="title-icon" />
               <h2 class="fz-15 dark-text-color">LowerMarsh Market</h2>
+              <img src="@/assets/icons/drop down.png" alt class="rectangle" />
             </div>
-
-            <figure>
-              <img src="@/assets/icons/right-arrow.png" alt />
-            </figure>
-          </router-link>
+          </div>
           <div class="all-roll">
             <market-card></market-card>
             <market-card class="comming-soon"></market-card>
@@ -25,7 +22,7 @@
         <!-- ________________________________________________todays hot block -->
         <div class="todays-hot container-fluid">
           <!-- mainTitle -->
-          <div class="main-title">
+          <router-link to="/Landing/LowerMarket" class="main-title">
             <div>
               <img src="@/assets/icons/TodaysHotIcon.png" alt class="title-icon" />
               <h2 class="fz-15 dark-text-color">Todays Hot Food</h2>
@@ -34,7 +31,7 @@
             <a href>
               <img src="@/assets/icons/right-arrow.png" alt />
             </a>
-          </div>
+          </router-link>
 
           <div class="all-roll">
             <!-- todays hot component 1 -->
@@ -46,7 +43,7 @@
         <!-- ________________________________________________product -->
         <div class="product container-fluid">
           <!-- mainTitle -->
-          <div class="main-title">
+          <router-link to="/Landing/Products" class="main-title">
             <div>
               <img src="@/assets/icons/productIcon.png" alt class="title-icon" />
               <h2 class="fz-15 dark-text-color">Product</h2>
@@ -56,7 +53,7 @@
             <a href>
               <img src="@/assets/icons/right-arrow.png" alt />
             </a>
-          </div>
+          </router-link>
 
           <div class="all-roll">
             <!-- sell card (product) component 1 -->

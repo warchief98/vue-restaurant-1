@@ -8,15 +8,15 @@
           <!-- mainTitle -->
           <div class="main-title">
             <div>
-              <img src="@/assets/icons/TodaysHotIcon.png" alt class="title-icon" />
-              <h2 class="fz-15 dark-text-color">LowerMarsh Market</h2>
+              <img src="@/assets/icons/productIcon.png" alt class="title-icon" />
+              <h2 class="fz-15 dark-text-color">Product & Craft</h2>
             </div>
           </div>
             <div>
-                <market-card v-for="test3 in 3" :key="test3"></market-card>
+              <!-- discount-show class is for showing discount label/remove it to remove discount in component -->
+                <product v-for="test4 in 3" :key="test4" class="discount-show"></product>
+                <product v-for="test4 in 2" :key="test4" class=""></product>
             </div>
-              
-            
         </div>
         <!-- ________________________________________________navigation menu -->
         <app-nav></app-nav>
@@ -26,12 +26,12 @@
 </template>
 
 <script>
-import marketCard from "@/components/localComponents/LowerMarketCard";
+import Product from "@/components/localComponents/ProductCard.vue";
 
 export default {
-  name:'LowerMarket',
+  name:'Products',
   components: {
-    marketCard: marketCard
+    Product: Product
   }
 };
 </script>

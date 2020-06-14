@@ -4,13 +4,13 @@
       <figure class="header-pic">
         <img src="@/assets/images/header-pic.jpg" alt />
         <figcaption>
-          <router-link to="/Landing/LowerMarket">
+          <router-link to="/Landing/Products">
             <img src="@/assets/icons/left-arrow-circle.png" alt />
           </router-link>
         </figcaption>
       </figure>
     </div>
-    <div class>
+    <div>
       <div class="container-fluid select-food-main">
         <div>
           <h3 class="fz-20">Hungry Llama</h3>
@@ -31,61 +31,25 @@
           <p class="fz-15 discount-text-color m-0">10% off entir menu</p>
         </div>
       </div>
-      <!-- _______________________________________menu(SelectMenu) -->
+      <!-- _______________________________________menu -->
       <div class="container-fluid gray-bg">
-        <h2 class="fz-15 dark-text-color py-3 text-left">Menu</h2>
+        <h2 class="fz-15 dark-text-color py-3 text-left">Hand Craft</h2>
       </div>
 
       <div class="container-fluid">
-        <h3 class="select-subtitle fz-15 text-left mb-3">Most Popular</h3>
-
-        <SelectMenu v-for="test5 in 4" :key="test5"></SelectMenu>
-
+        <SelectHandCraft v-for="test6 in 4" :key="test6"></SelectHandCraft>
       </div>
-
-      <!-- _______________________________________salad box -->
-
-      <div class="container-fluid gray-bg">
-        <h2 class="fz-15 dark-text-color py-3 text-left">Salad Box</h2>
-      </div>
-
-      <div class="container-fluid"></div>
-
-      <!-- _______________________________________cold drink -->
-
-      <div class="container-fluid gray-bg">
-        <h2 class="fz-15 dark-text-color py-3 text-left">Cold Drinks</h2>
-      </div>
-
-      <div class="container-fluid"></div>
     </div>
-    <AddToBascket :AddToBascket="AddToBascket"></AddToBascket>
   </div>
 </template>
 
 <script>
-import { eventBus } from "@/main.js";
-import SelectMenu from "@/components/localComponents/SelectMenu.vue";
-import AddToBascket from "@/components/globalComponents/Bascket/AddToBascket.vue";
+import SelectHandCraft from "@/components/localComponents/SelectHandCraft.vue";
+
 export default {
   name: "selectFood",
-  data() {
-    return {
-      AddToBascket: false
-    };
-  },
   components: {
-    SelectMenu: SelectMenu,
-    AddToBascket: AddToBascket
-  },
-  created() {
-    eventBus.$on("AddToBascketClose", close => {
-      this.AddToBascket = close;
-    });
-
-    eventBus.$on("AddToBascketTrue", getTrue => {
-      this.AddToBascket = getTrue;
-    });
+    SelectHandCraft: SelectHandCraft
   }
 };
 </script>

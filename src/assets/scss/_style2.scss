@@ -1,0 +1,47 @@
+// bascket page and pop up styles
+.bascket-pop-up-container {
+    width: 100%;
+    height: 30vh;
+    min-height: 320px;
+    border-radius: 7px 7px 0 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    background-color: white;
+    z-index: 6;
+    transition: 0.5s;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    footer {
+        .counter {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
+            button {
+                width: 24px;
+                height: 24px;
+                border-radius: 5px;
+                border: 1px solid;
+                border-color: #07c0f6;
+                color: #07c0f6;
+                outline: none !important;
+            }
+            span {
+                margin: 0 25px;
+            }
+        }
+    }
+}
+
+.bascket-pop-up-container-come {
+    transform: translateY(0%) !important;
+}
