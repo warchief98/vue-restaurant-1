@@ -76,10 +76,10 @@
         </ul>
       </footer>
     </div>
-    <AccountDetails-pop1 :AccountDetails1="AccountDetails1"></AccountDetails-pop1>
-    <AccountDetails-pop2 :AccountDetails2="AccountDetails2"></AccountDetails-pop2>
-    <AccountDetails-pop3 :AccountDetails3="AccountDetails3"></AccountDetails-pop3>
-    <AccountDetails-pop4 :AccountDetails4="AccountDetails4"></AccountDetails-pop4>
+    <AccountDetails-pop1 v-show="AccountDetails1"  :AccountDetails1="AccountDetails1"></AccountDetails-pop1>
+    <AccountDetails-pop2 v-show="AccountDetails2"  :AccountDetails2="AccountDetails2"></AccountDetails-pop2>
+    <AccountDetails-pop3 v-show="AccountDetails3"  :AccountDetails3="AccountDetails3"></AccountDetails-pop3>
+    <AccountDetails-pop4 v-show="AccountDetails4"  :AccountDetails4="AccountDetails4"></AccountDetails-pop4>
   </div>
 </template>
 

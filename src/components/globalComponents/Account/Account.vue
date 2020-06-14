@@ -18,11 +18,13 @@
       <li @click="AccountDetails = !AccountDetails">Account Details</li>
       <li>Payment Methods</li>
       <li @click="About = !About">About</li>
-      <li>Help</li>
-      <li>Sing Out</li>
+      <li @click="Help = !Help">Help</li>
+      <li @click="signOut= !signOut">Sing Out</li>
     </ul>
-    <AccountDetails-pop :AccountDetails="AccountDetails"></AccountDetails-pop>
-    <account-about :About="About"></account-about>
+    <AccountDetails-pop v-if="AccountDetails" :AccountDetails="AccountDetails"></AccountDetails-pop>
+    <account-about v-if="About" :About="About"></account-about>
+    <Help v-if="Help" :Help="Help"></Help>
+    <signOut v-if="signOut" :signOut="signOut"></signOut>
   </div>
 </template>
 
@@ -35,7 +37,9 @@ export default {
   data() {
     return {
       AccountDetails: false,
-      About: false
+      About: false,
+      signOut: false,
+      Help: false,
     };
   },
   methods: {
@@ -50,6 +54,12 @@ export default {
 
     eventBus.$on("aboutClose", (close) => {
       this.About = close;
+    });
+    eventBus.$on("signOutClose", (close) => {
+      this.signOut = close;
+    });
+     eventBus.$on("HelpClose", (close) => {
+      this.Help = close;
     });
   }
 };

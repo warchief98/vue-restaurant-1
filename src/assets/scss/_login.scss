@@ -27,7 +27,7 @@
                 border: 1px solid silver;
                 border-radius: 7px;
                 outline: none !important;
-                font-size: 13px;
+                font-size: 14px;
                 font-weight: bold;
             }
         }
@@ -41,6 +41,22 @@
                 position: absolute;
                 top: 50%;
                 left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: white;
+                padding: 0 5px;
+            }
+        }
+        .lined-title-signOut {
+            width: 100%;
+            height: 1px;
+            background-color: #d1ce6e;
+            position: relative;
+            &::after {
+                content: "Or continue with email";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                color: #d1ce6e;
                 transform: translate(-50%, -50%);
                 background-color: white;
                 padding: 0 5px;
