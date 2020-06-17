@@ -15,7 +15,7 @@
                         <span>{{ counter }}</span>
                     <button @click="counter++">+</button>
                 </div>
-                    <button class="submit-btn lightBlue-bg">Add to Basket</button>
+                    <button class="submit-btn lightBlue-bg" @click="AddToBascketClose();SmallBascketShow();">Add to Basket</button>
             </footer>
         </div>
     </div>
@@ -32,6 +32,9 @@ export default {
     methods:{
         AddToBascketClose(){
             eventBus.$emit("AddToBascketClose",false)
+        },
+        SmallBascketShow(){
+            eventBus.$emit('SmallBascketShow',true)
         }
     }
 }

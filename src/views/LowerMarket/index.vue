@@ -13,7 +13,7 @@
             </div>
           </div>
             <div>
-                <market-card v-for="test3 in 3" :key="test3"></market-card>
+                <market-card v-for="test15 in 3" :key="test15"></market-card>
             </div>
               
             

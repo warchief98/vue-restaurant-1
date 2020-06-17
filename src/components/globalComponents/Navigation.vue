@@ -13,22 +13,39 @@
       </router-link>
     </div>
     <div class="navi-items">
-      <router-link to="/Landing/LowerMarket">
+      <router-link>
         <img src="@/assets/icons/menu-icon-3.png" alt />
       </router-link>
     </div>
     <div class="navi-items">
-      <router-link  to="page4">
+      <router-link to="page4">
         <img src="@/assets/icons/menu-icon-4.png" alt />
       </router-link>
     </div>
+
+    <!-- view bascket component -->
+    <view-bascket-small v-if="smallBascket"></view-bascket-small>
   </div>
 </template>
 
 <script>
-export default {};
+import { eventBus } from "@/main.js";
+export default {
+  data() {
+    return {
+      smallBascket: false
+    };
+  },
+  created() {
+    eventBus.$on("SmallBascketShow", open => {
+      this.smallBascket = open;
+    });
+    eventBus.$on("SmallBascketHide", close => {
+      this.smallBascket = close;
+    });
+  }
+};
 </script>
 
 <style lang="scss">
-
 </style>

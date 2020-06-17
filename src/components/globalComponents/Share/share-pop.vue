@@ -9,7 +9,7 @@
       <div class="share-box-head">
         <div class="share-box-app">
           <carousel :per-page="4" :mouse-drag="true">
-            <slide v-for="test in 8" :key="test">
+            <slide v-for="test11 in 8" :key="test11">
               <div class="figure-box">
                 <div class="caption-img">
                   <img src="@/assets/images/hot-2.jpg" alt />
@@ -25,7 +25,7 @@
         </div>
         <div class="share-box-app border-0 ">
           <carousel :per-page="4" :mouse-drag="true">
-            <slide v-for="test in 8" :key="test">
+            <slide v-for="test12 in 8" :key="test12">
               <div class="figure-box">
                 <figure class="share-app-icons">
                   <img src="@/assets/images/hot-1.jpg" alt />

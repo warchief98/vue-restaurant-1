@@ -7,6 +7,9 @@ import Products from '../views/Product/index.vue'
 import SelectCraft from '../views/Product/SelectCraft/index.vue'
 import login from '../views/login/login.vue'
 import signUp from '../views/signUp.vue'
+import Bascket from '../views/Bascket/index.vue'
+import CheckOut from '../views/CheckOut/index.vue'
+import Payment from '../views/Payment.vue'
 
 
 Vue.use(VueRouter)
@@ -45,6 +48,21 @@ const routes = [{
         path: '/signUp',
         name: 'signUp',
         component: signUp
+    },
+    {
+        path: '/Bascket',
+        name: 'Bascket',
+        component: Bascket
+    },
+    {
+        path: '/CheckOut',
+        name: 'CheckOut',
+        component: CheckOut
+    },
+    {
+        path: '/Payment',
+        name: 'Payment',
+        component: Payment
     },
 
 

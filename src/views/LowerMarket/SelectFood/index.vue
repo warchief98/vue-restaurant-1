@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bot-menu-padding">
     <div class="container-fluid m-0 p-0">
       <figure class="header-pic">
         <img src="@/assets/images/header-pic.jpg" alt />
@@ -39,8 +39,10 @@
       <div class="container-fluid">
         <h3 class="select-subtitle fz-15 text-left mb-3">Most Popular</h3>
 
-        <SelectMenu v-for="test5 in 4" :key="test5"></SelectMenu>
-
+        <!-- with offer price -->
+        <SelectMenu v-for="test5 in 2" :key="test5" class="offer"></SelectMenu>
+        <!-- without offer price -->
+        <SelectMenu v-for="test16 in 2" :key="test16" class="added-number"></SelectMenu>
       </div>
 
       <!-- _______________________________________salad box -->
@@ -49,7 +51,12 @@
         <h2 class="fz-15 dark-text-color py-3 text-left">Salad Box</h2>
       </div>
 
-      <div class="container-fluid"></div>
+      <div class="container-fluid">
+        <!-- with offer price -->
+        <SelectSalad v-for="test1 in 2" :key="test1" class="offer added-number"></SelectSalad>
+        <!-- without offer price -->
+        <SelectSalad v-for="test2 in 2" :key="test2" class="added-number"></SelectSalad>
+      </div>
 
       <!-- _______________________________________cold drink -->
 
@@ -57,15 +64,23 @@
         <h2 class="fz-15 dark-text-color py-3 text-left">Cold Drinks</h2>
       </div>
 
-      <div class="container-fluid"></div>
+      <div class="container-fluid">
+        <!-- .sold-out for soldOot tag -->
+        <SelectDrink v-for="test3 in 2" :key="test3" class="sold-out"></SelectDrink>
+        <SelectDrink v-for="test4 in 2" :key="test4"></SelectDrink>
+      </div>
     </div>
     <AddToBascket :AddToBascket="AddToBascket"></AddToBascket>
+    <!-- ________________________________________________navigation menu -->
+    <app-nav></app-nav>
   </div>
 </template>
 
 <script>
 import { eventBus } from "@/main.js";
 import SelectMenu from "@/components/localComponents/SelectMenu.vue";
+import SelectSalad from "@/components/localComponents/SelectSalad.vue";
+import SelectDrink from "@/components/localComponents/SelectDrink.vue";
 import AddToBascket from "@/components/globalComponents/Bascket/AddToBascket.vue";
 export default {
   name: "selectFood",
@@ -76,6 +91,8 @@ export default {
   },
   components: {
     SelectMenu: SelectMenu,
+    SelectSalad: SelectSalad,
+    SelectDrink: SelectDrink,
     AddToBascket: AddToBascket
   },
   created() {

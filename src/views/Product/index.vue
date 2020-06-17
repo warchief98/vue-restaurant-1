@@ -14,8 +14,8 @@
           </div>
             <div>
               <!-- discount-show class is for showing discount label/remove it to remove discount in component -->
-                <product v-for="test4 in 3" :key="test4" class="discount-show"></product>
-                <product v-for="test7 in 2" :key="test7" class=""></product>
+                <product v-for="test8 in 3" :key="test8" class="discount-show"></product>
+                <product v-for="test9 in 2" :key="test9"></product>
             </div>
         </div>
         <!-- ________________________________________________navigation menu -->

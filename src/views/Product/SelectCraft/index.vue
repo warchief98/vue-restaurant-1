@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="bot-menu-padding">
     <div class="container-fluid m-0 p-0">
       <figure class="header-pic">
-        <img src="@/assets/images/header-pic.jpg" alt />
+        <img src="@/assets/images/header-pic-2.jpg" alt />
         <figcaption>
           <router-link to="/Landing/Products">
             <img src="@/assets/icons/left-arrow-circle.png" alt />
@@ -37,19 +37,44 @@
       </div>
 
       <div class="container-fluid">
-        <SelectHandCraft v-for="test6 in 4" :key="test6"></SelectHandCraft>
+        <h3 class="select-subtitle fz-15 text-left mb-3">Most Popular</h3>
+        <!-- without offer price -->
+        <!-- .added number to show little box number -->
+        <SelectHandCraft v-for="test6 in 2" :key="test6" class="added-number"></SelectHandCraft>
+        <!-- with offer price -->
+        <SelectHandCraft v-for="test7 in 2" :key="test7" class="offer"></SelectHandCraft>
       </div>
     </div>
+    <AddToBascket :AddToBascket="AddToBascket"></AddToBascket>
+    <!-- ________________________________________________navigation menu -->
+    <app-nav></app-nav>
   </div>
 </template>
 
 <script>
 import SelectHandCraft from "@/components/localComponents/SelectHandCraft.vue";
+import AddToBascket from "@/components/globalComponents/Bascket/AddToBascket.vue";
+import { eventBus } from "@/main.js";
 
 export default {
   name: "selectFood",
+  data() {
+    return {
+      AddToBascket: false
+    };
+  },
   components: {
-    SelectHandCraft: SelectHandCraft
+    SelectHandCraft: SelectHandCraft,
+    AddToBascket: AddToBascket
+  },
+  created() {
+    eventBus.$on("AddToBascketClose", close => {
+      this.AddToBascket = close;
+    });
+
+    eventBus.$on("AddToBascketTrue", getTrue => {
+      this.AddToBascket = getTrue;
+    });
   }
 };
 </script>

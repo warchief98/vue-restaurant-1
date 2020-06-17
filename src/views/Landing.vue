@@ -35,7 +35,7 @@
 
           <div class="all-roll">
             <!-- todays hot component 1 -->
-            <todays-hot v-for="test in 2" :key="test"></todays-hot>
+            <todays-hot v-for="test13 in 2" :key="test13"></todays-hot>
             <todays-hot class="discount"></todays-hot>
           </div>
         </div>
@@ -57,7 +57,7 @@
 
           <div class="all-roll">
             <!-- sell card (product) component 1 -->
-            <Product v-for="test2 in 3" :key="test2"></Product>
+            <Product v-for="test14 in 3" :key="test14"></Product>
           </div>
         </div>
         <!-- ________________________________________________navigation menu -->

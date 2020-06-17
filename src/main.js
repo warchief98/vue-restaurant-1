@@ -28,6 +28,11 @@ import sharePop from './components/globalComponents/Share/share-pop.vue'
 import VueCarousel from 'vue-carousel';
 import { Carousel, Slide } from "vue-carousel";
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+import ViewBaskectSmall from './components/globalComponents/Bascket/ViewBaskectSmall.vue'
+import AddMoreToBascket from './components/globalComponents/Bascket/AddMoreToBascket.vue'
+import PickUpPopUp from './components/globalComponents/Bascket/PickUpPopUp.vue'
+import BascketOrder from './components/globalComponents/Bascket/BascketOrder.vue'
+import Suggestion from './components/globalComponents/Bascket/Suggestion.vue'
 
 // import Global components
 Vue.component('app-header', Header)
@@ -53,6 +58,11 @@ Vue.component('Share', Share)
 Vue.component('share-pop', sharePop)
 Vue.component('carousel', Carousel);
 Vue.component('slide', Slide);
+Vue.component('view-bascket-small', ViewBaskectSmall)
+Vue.component('AddMoreToBascket', AddMoreToBascket)
+Vue.component('PickUpPopUp', PickUpPopUp)
+Vue.component('bascket-order', BascketOrder)
+Vue.component('Suggestion', Suggestion)
 
 
 

@@ -18,6 +18,10 @@ p {
     margin: 0;
 }
 
+.bot-menu-padding {
+    padding-bottom: 75px;
+}
+
 .border-silver {
     display: inline-block;
     width: 100%;
@@ -38,6 +42,17 @@ p {
     border-radius: 5px;
     width: 100%;
     height: 45px;
+}
+
+.submit-btn-2 {
+    outline: none !important;
+    color: #07c0f6;
+    border: 1px solid #07c0f6;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 100%;
+    height: 45px;
+    margin-top: 15px;
 }
 
 .done-btn {
@@ -123,6 +138,10 @@ p {
     font-size: 10px;
 }
 
+.fw-bold {
+    font-weight: bold;
+}
+
 // color classes
 .dark-text-color {
     color: #031B40;
@@ -140,8 +159,21 @@ p {
     color: #C93A5C;
 }
 
+.red-bg {
+    background-color: #C93A5C;
+}
+
 .lightBrown-color {
     color: #C9751C;
+}
+
+.lightBrown-bg {
+    background-color: #fff;
+    background-color: #C9751C;
+}
+
+.gold-color {
+    color: #C9BF1C;
 }
 
 .darkBlue-bg {
@@ -154,4 +186,42 @@ p {
 
 .lightBlue-bg {
     background-color: #07c0f6;
+}
+
+.lightBlue-color {
+    color: #07c0f6;
+}
+
+.lightGreen-bg {
+    background-color: #26C99A;
+}
+
+.lightGreen-color {
+    color: #26C99A;
+}
+
+.count-btn {
+    width: 16px;
+    height: 16px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.btn-style-1 {
+    border: none;
+    outline: none !important;
+    @extend .lightBlue-color;
+    background-color: transparent;
+    @extend .fz-13;
+}
+
+.btn-style-2 {
+    @extend .fz-15;
+    @extend .lightBrown-bg;
+    width: 110px;
+    height: 50px;
+    border: none;
+    outline: none !important;
+    color: white;
+    border-radius: 5px;
 }
