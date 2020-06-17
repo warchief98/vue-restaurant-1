@@ -24,7 +24,8 @@
         </div>
       </div>
     </div>
-    <share-pop v-if="sharePop" :sharePop="sharePop"></share-pop>
+    <share-pop
+     :sharePop="sharePop"></share-pop>
   </div>
 </template>
 
