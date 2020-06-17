@@ -8,17 +8,17 @@
       </router-link>
     </div>
     <div class="navi-items">
-      <router-link to="/page2">
+      <router-link to="/filter">
         <img src="@/assets/icons/menu-icon-2.png" alt />
       </router-link>
     </div>
     <div class="navi-items">
-      <router-link to="/Landing/LowerMarket">
+      <router-link to="/orders">
         <img src="@/assets/icons/menu-icon-3.png" alt />
       </router-link>
     </div>
     <div class="navi-items">
-      <router-link  to="page4">
+      <router-link  to="/searchMarket">
         <img src="@/assets/icons/menu-icon-4.png" alt />
       </router-link>
     </div>

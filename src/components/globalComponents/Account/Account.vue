@@ -4,6 +4,7 @@
     <div class="back-arrow" @click="AccountClose">
       <img src="@/assets/icons/right-arrow.png" alt />
     </div>
+    <div class="Account-main">
     <div class="Account-head">
       <figure>
         <img src="@/assets/icons/userAvatar.png" alt />
@@ -21,10 +22,11 @@
       <li @click="Help = !Help">Help</li>
       <li @click="signOut= !signOut">Sing Out</li>
     </ul>
-    <AccountDetails-pop v-if="AccountDetails" :AccountDetails="AccountDetails"></AccountDetails-pop>
-    <account-about v-if="About" :About="About"></account-about>
-    <Help v-if="Help" :Help="Help"></Help>
-    <signOut v-if="signOut" :signOut="signOut"></signOut>
+    </div>
+    <AccountDetails-pop :AccountDetails="AccountDetails"></AccountDetails-pop>
+    <account-about :About="About"></account-about>
+    <Help :Help="Help"></Help>
+    <signOut :signOut="signOut"></signOut>
   </div>
 </template>
 

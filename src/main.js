@@ -25,6 +25,22 @@ import Help from './components/globalComponents/Account/Help/Help.vue'
 import WriteEmail from './components/globalComponents/Account/Help/writeAnEmail.vue'
 import Share from './components/globalComponents/Share/Share.vue'
 import sharePop from './components/globalComponents/Share/share-pop.vue'
+import Upcoming from './components/globalComponents/orders/Upcoming.vue'
+import OrderHistory from './components/globalComponents/orders/orderHistory.vue'
+import orderDetails from './components/globalComponents/orders/orderDetails.vue'
+import deletePop from './components/globalComponents/orders/delete-pop.vue'
+import inviteFriends from './components/globalComponents/orders/inviteFriends.vue'
+import emailPop from './components/globalComponents/signIn-signUp/email-pop.vue'
+import passwordPop from './components/globalComponents/signIn-signUp/password-pop.vue'
+import forgetPassword from './components/globalComponents/signIn-signUp/forget-password'
+import verifyCode from './components/globalComponents/signIn-signUp/verify-code.vue'
+import createAccount from './components/globalComponents/signIn-signUp/create-account.vue'
+import createAccountPop1 from './components/globalComponents/signIn-signUp/createAccount-pop-1.vue'
+import createAccountPop2 from './components/globalComponents/signIn-signUp/createAccount-pop-2.vue'
+import createAccountPop3 from './components/globalComponents/signIn-signUp/createAccount-pop-3.vue'
+import createAccountPop4 from './components/globalComponents/signIn-signUp/createAccount-pop-4.vue'
+
+
 import VueCarousel from 'vue-carousel';
 import { Carousel, Slide } from "vue-carousel";
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
@@ -53,8 +69,20 @@ Vue.component('Share', Share)
 Vue.component('share-pop', sharePop)
 Vue.component('carousel', Carousel);
 Vue.component('slide', Slide);
-
-
+Vue.component('Upcoming', Upcoming)
+Vue.component('OrderHistory', OrderHistory)
+Vue.component('orderDetails', orderDetails)
+Vue.component('delete-pop', deletePop)
+Vue.component('inviteFriends', inviteFriends)
+Vue.component('email-pop', emailPop)
+Vue.component('password-pop', passwordPop)
+Vue.component('forget-password', forgetPassword)
+Vue.component('verify-code', verifyCode)
+Vue.component('create-account', createAccount)
+Vue.component('create-account-pop-1', createAccountPop1)
+Vue.component('create-account-pop-2', createAccountPop2)
+Vue.component('create-account-pop-3', createAccountPop3)
+Vue.component('create-account-pop-4', createAccountPop4)
 
 
 Vue.use(VueCarousel);

@@ -5,9 +5,10 @@ import LowerMarket from '../views/LowerMarket/index.vue'
 import selectFood from '../views/LowerMarket/SelectFood/index.vue'
 import Products from '../views/Product/index.vue'
 import SelectCraft from '../views/Product/SelectCraft/index.vue'
-import login from '../views/login/login.vue'
 import signUp from '../views/signUp.vue'
-
+import orders from '../views/orders/index.vue'
+import filter from '../views/filter/index.vue'
+import searchMarket from '../views/search-market.vue'
 
 Vue.use(VueRouter)
 
@@ -37,15 +38,25 @@ const routes = [{
         component: SelectCraft
     },
     {
-        path: '/login',
-        name: 'login',
-        component: login
-    },
-    {
         path: '/signUp',
         name: 'signUp',
         component: signUp
     },
+    {
+        path: '/orders',
+        name: 'orders',
+        component: orders
+    }, {
+        path: '/filter',
+        name: 'filter',
+        component: filter
+    },
+    {
+        path: '/searchMarket',
+        name: 'searchMarket',
+        component: searchMarket
+    }
+
 
 
 ]
