@@ -54,9 +54,11 @@
     <!-- dietary pop up -->
     <Account-pop :Account="Account"></Account-pop>
     <!-- dietary pop up -->
-    <dietary-pop  :dietaryShow="dietaryShow"></dietary-pop>
+    <dietary-pop :dietaryShow="dietaryShow"></dietary-pop>
     <!-- sorting-1 pop up -->
     <sorting-pop-1 :sorting1="sorting1"></sorting-pop-1>
+    <!-- sorting-2 pop up -->
+    <sorting-pop-2 :sorting2="sorting2"></sorting-pop-2>
     <!-----------Share------------>
     <Share :Share="Share"></Share>
   </div>

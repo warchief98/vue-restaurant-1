@@ -565,7 +565,7 @@
                     height: 100vh;
                     background: white;
                     position: fixed;
-                    overflow-y: scroll;
+                    overflow: hidden;
                     top: 0;
                     left: 0;
                     transform: translateY(100%);
@@ -582,41 +582,46 @@
                             margin: 0 5px;
                         }
                     }
-                    .Account-head {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        flex-flow: column;
-                        padding: 40px 0 15px 0;
-                        section {
-                            h3 {
-                                font-weight: bold;
+                    .Account-main {
+                        width: 100%;
+                        height: calc(100vh - 23.88px);
+                        overflow: auto;
+                        .Account-head {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-flow: column;
+                            padding: 40px 0 15px 0;
+                            section {
+                                h3 {
+                                    font-weight: bold;
+                                }
+                            }
+                            * {
+                                margin: 0;
+                            }
+                            img {
+                                transform: scale(1.7);
+                                margin-bottom: 20px;
                             }
                         }
-                        * {
+                        ul {
+                            list-style-type: none;
+                            padding: 0;
                             margin: 0;
-                        }
-                        img {
-                            transform: scale(1.7);
-                            margin-bottom: 20px;
-                        }
-                    }
-                    ul {
-                        list-style-type: none;
-                        padding: 0;
-                        margin: 0;
-                        padding-left: 40px;
-                        li {
-                            border-top: 1px solid silver;
-                            text-align: left;
-                            padding: 18px 0 18px 0;
-                            border-bottom: none;
-                            color: black;
-                            a {
-                                @extend .dark-text-color;
-                                width: 100%;
-                                display: inline-block;
-                                text-decoration: none;
+                            padding-left: 40px;
+                            li {
+                                border-top: 1px solid silver;
+                                text-align: left;
+                                padding: 18px 0 18px 0;
+                                border-bottom: none;
+                                color: black;
+                                a {
+                                    @extend .dark-text-color;
+                                    width: 100%;
+                                    display: inline-block;
+                                    text-decoration: none;
+                                }
                             }
                         }
                     }
@@ -874,7 +879,7 @@
                     align-items: center;
                     flex-flow: row nowrap;
                     padding: 8px 15px 13px;
-                    border-bottom: 2px solid rgba(192, 192, 192, 0.671);
+                    border-bottom: 2px solid rgba(192, 192, 192, 0.371);
                     position: relative;
                     figure {
                         margin: 0;
@@ -1109,6 +1114,9 @@
                             text-align: left;
                             padding: 10px 35px;
                             font-weight: bold;
+                            h3 {
+                                margin: 0;
+                            }
                         }
                         p {
                             padding: 10px 35px;
@@ -1308,7 +1316,6 @@
                 
                 .Share {
                     position: fixed;
-                    overflow-y: scroll;
                     background: white url('../images/Sharebg.png') no-repeat center center/300px 250px;
                     top: 0;
                     left: 0;
@@ -1316,55 +1323,60 @@
                     height: 100vh;
                     transform: translateY(100%);
                     transition: 0.5s;
+                    overflow: hidden;
                     .about-head-title {
                         padding-bottom: 25px;
                         figure {
                             top: 30%
                         }
                     }
-                    .Share-box {
-                        display: flex;
-                        flex-flow: column;
-                        justify-content: space-between;
-                        align-items: center;
-                        width: 100%;
-                        height: 90vh;
-                        .Share-head {
-                            padding: 15px 0;
-                            h1 {
-                                @extend .fz-18;
-                                font-weight: bold;
-                            }
-                            p {
-                                color: #b78d59;
-                                font-size: 15px;
-                            }
-                        }
-                        .Share-foot {
-                            width: 100%;
+                    .share-box-container {
+                        height: calc(100vh - 53px);
+                        overflow: auto;
+                        .Share-box {
                             display: flex;
-                            justify-content: space-evenly;
-                            align-items: center;
                             flex-flow: column;
-                            h5 {
-                                @extend .fz-14;
-                                margin: 10px 0 5px;
-                            }
-                            button {
-                                @extend .fz-14;
-                            }
-                            .copy-link {
-                                border-radius: 5px;
-                                width: 100%;
-                                height: 45px;
-                                padding: 0 10px;
-                                border: 1px solid silver;
-                                display: flex;
-                                align-items: center;
-                                justify-content: space-between;
-                                margin: 5px;
-                                .done-btn {
+                            justify-content: space-between;
+                            align-items: center;
+                            width: 100%;
+                            height: 90vh;
+                            .Share-head {
+                                padding: 15px 0;
+                                h1 {
+                                    @extend .fz-18;
+                                    font-weight: bold;
+                                }
+                                p {
                                     color: #b78d59;
+                                    font-size: 15px;
+                                }
+                            }
+                            .Share-foot {
+                                width: 100%;
+                                display: flex;
+                                justify-content: space-evenly;
+                                align-items: center;
+                                flex-flow: column;
+                                h5 {
+                                    @extend .fz-14;
+                                    margin: 10px 0 5px;
+                                }
+                                button {
+                                    @extend .fz-14;
+                                }
+                                .copy-link {
+                                    border-radius: 5px;
+                                    width: 100%;
+                                    height: 45px;
+                                    padding: 0 10px;
+                                    border: 1px solid silver;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    margin: 5px;
+                                    .done-btn {
+                                        color: #b78d59;
+                                    }
                                 }
                             }
                         }
@@ -1533,4 +1545,601 @@
                 .market-block {
                     width: 80%;
                     margin: auto;
+                }
+                
+                //______________________________orders pages
+                .order-head-click {
+                    color: black !important;
+                    border-bottom: 2px solid #59b0c8 !important;
+                }
+                
+                .order {
+                    width: 100%;
+                    height: 100vh;
+                    display: flex;
+                    flex-flow: column;
+                    justify-content: flex-start;
+                    align-items: center;
+                    .order-head {
+                        width: 100%;
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        z-index: 1;
+                        display: flex;
+                        justify-content: center;
+                        padding: 3px 10px 10px;
+                        background: white;
+                        border-bottom: 1px solid rgba(128, 128, 128, 0.459);
+                        .order-btn {
+                            width: 50%;
+                            background: transparent;
+                            color: gray;
+                            border: none;
+                            outline: none !important;
+                            font-size: 13px;
+                            padding-bottom: 5px;
+                        }
+                    }
+                }
+                
+                //__________________________________Upcoming component style
+                .Upcoming-inactive {
+                    opacity: .5;
+                }
+                
+                .Upcoming {
+                    width: 100%;
+                    height: 100vh;
+                    margin-top: 40px;
+                    margin-bottom: 75px;
+                    .Send-invite {
+                        width: 100%;
+                        display: flex;
+                        flex-flow: column;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        border: 1px solid #bcb87b;
+                        padding: 5px;
+                        margin-top: 5px;
+                        border-radius: 5px;
+                        background: url('../images/invite.png') no-repeat 95% 90%/ 60px 40px;
+                        p {
+                            margin-bottom: 4px;
+                            font-size: 11px;
+                            text-align: left;
+                        }
+                        .done-btn {
+                            color: #c2bc42;
+                            font-size: 12px;
+                        }
+                    }
+                    .Upcoming-head {
+                        width: 100%;
+                        display: flex;
+                        flex-flow: column;
+                        align-items: flex-start;
+                        justify-content: space-evenly;
+                        padding: 5px 0;
+                        overflow-y: scroll;
+                        .Upcoming-head-title {
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            margin-bottom: 5px;
+                            h3 {
+                                margin: 0;
+                                font-size: 13px;
+                                font-weight: bold;
+                                color: black;
+                            }
+                            p {
+                                font-size: 11px;
+                                color: #d7a876;
+                            }
+                        }
+                        p {
+                            font-size: 12px;
+                            color: black;
+                        }
+                    }
+                    .Upcoming-main {
+                        ul {
+                            width: 100%;
+                            li {
+                                width: 100%;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                padding: 8px 0 8px 10px;
+                                position: relative;
+                                &::before {
+                                    content: '';
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    height: 100%;
+                                    width: 2px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    background: #7ccae1;
+                                }
+                                &:first-child {
+                                    .Upcoming-main-box {
+                                        figure {
+                                            width: 27px;
+                                            height: 32px;
+                                            margin-right: 20px;
+                                            img {
+                                                width: 100%;
+                                                height: 100%;
+                                            }
+                                        }
+                                    }
+                                }
+                                .Upcoming-main-box {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    figure {
+                                        margin: 0;
+                                        margin-right: 10px;
+                                        width: 35px;
+                                        height: 35px;
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+                                    .Upcoming-main-title {
+                                        display: flex;
+                                        flex-flow: column;
+                                        align-items: flex-start;
+                                        justify-content: space-between;
+                                        h3 {
+                                            margin: 0;
+                                            font-size: 12px;
+                                            font-weight: bold;
+                                            color: black;
+                                        }
+                                        p {
+                                            font-size: 10px;
+                                            color: black;
+                                        }
+                                    }
+                                }
+                                p {
+                                    color: #d0cc83;
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                    footer {
+                        .submit-btn {
+                            background: #c8bf1c;
+                            color: #524b07;
+                            height: 35px;
+                            font-size: 13px;
+                            border-radius: 2px;
+                        }
+                    }
+                }
+                
+                //_______________________invite friends componenet style
+                .invite-come {
+                    transform: translateY(0) !important;
+                }
+                
+                .invite {
+                    width: 100%;
+                    height: 100vh;
+                    position: fixed;
+                    z-index: 10;
+                    top: 0;
+                    left: 0;
+                    background: white url('../images/invite1.png') no-repeat center center fixed;
+                    transform: translateY(100%);
+                    .invite-main {
+                        width: 100%;
+                        display: flex;
+                        flex-flow: column;
+                        justify-content: space-between;
+                        align-items: center;
+                        .invite-title {
+                            padding: 15px 0;
+                            h3 {
+                                color: #d99e61;
+                                font-size: 17px;
+                            }
+                            p {
+                                font-size: 14px;
+                            }
+                        }
+                        .submit-btn {
+                            position: fixed;
+                            bottom: 0;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            width: 90%;
+                            background: #c8bf1c;
+                        }
+                    }
+                }
+                
+                //____________________n0-order-yet stylr
+                .no-order-yet {
+                    width: 100%;
+                    height: 100%;
+                    background: white url('../icons/food.jpeg') no-repeat center center;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                }
+                
+                //__________________order history component style
+                .orderHistory {
+                    width: 100%;
+                    height: 100vh;
+                    margin-top: 50px;
+                    background: white;
+                    .orderHistory-container {
+                        width: 100%;
+                        // height: 60vh;
+                        display: flex;
+                        flex-flow: column;
+                        align-items: center;
+                        justify-content: flex-start;
+                        overflow-y: scroll;
+                        margin-bottom: 75px;
+                        .orderHistory-head {
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            padding: 0 30px;
+                            figure {
+                                margin: 0;
+                            }
+                        }
+                        .orderHistory-box {
+                            width: 100%;
+                            height: 90px;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: flex-start;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            border-bottom: 1px solid rgba(128, 128, 128, 0.245);
+                            .orderHistory-food {
+                                display: flex;
+                                flex-flow: column;
+                                justify-content: space-between;
+                                align-items: flex-start;
+                                height: 100%;
+                                .food {
+                                    display: flex;
+                                    flex-flow: column;
+                                    align-items: flex-start;
+                                    justify-content: flex-start;
+                                    p {
+                                        color: #be976a;
+                                        font-size: 11px;
+                                    }
+                                }
+                                .date {
+                                    font-size: 11px;
+                                    color: gray;
+                                }
+                            }
+                            .orderHistory-title {
+                                h3 {
+                                    font-size: 13px;
+                                    font-weight: bold;
+                                    margin: 0;
+                                }
+                                h4 {
+                                    margin: 0;
+                                    font-size: 12px;
+                                }
+                                p {
+                                    color: gray;
+                                    font-size: 11px;
+                                }
+                                .done-btn {
+                                    font-size: 12px;
+                                }
+                            }
+                            .orderHistory-icons {
+                                display: flex;
+                                flex-flow: column;
+                                align-items: flex-end;
+                                justify-content: space-between;
+                                height: 100%;
+                                div {
+                                    display: flex;
+                                    justify-content: flex-end;
+                                    align-items: center;
+                                    figure {
+                                        margin: 0 4px;
+                                    }
+                                }
+                                figure {
+                                    margin: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                //_______________________________order Details component style
+                .orderDetails-come {
+                    transform: translateY(0) !important;
+                }
+                
+                .orderDetails {
+                    position: fixed;
+                    z-index: 20;
+                    bottom: 0;
+                    left: 0;
+                    transform: translateY(100%);
+                    width: 100%;
+                    height: 55vh;
+                    min-height: 275px;
+                    background-color: white;
+                    display: flex;
+                    flex-flow: column;
+                    justify-content: flex-start;
+                    align-items: center;
+                    border-radius: 7px 7px 0 0;
+                    transition: 1s;
+                    .header {
+                        width: 100%;
+                        border-bottom: 1px solid silver;
+                        h2 {
+                            margin: 10px 0 10px 0;
+                            font-weight: bold;
+                            font-size: 15px;
+                        }
+                    }
+                    .orderDetails-main {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 100%;
+                        padding: 8px 0;
+                        .orderDerails-title {
+                            display: flex;
+                            flex-flow: column;
+                            justify-content: space-between;
+                            align-items: flex-start;
+                            h3 {
+                                font-size: 13px;
+                                font-weight: bold;
+                                margin: 0;
+                            }
+                            h4 {
+                                margin: 0;
+                                font-size: 12px;
+                            }
+                            p {
+                                color: gray;
+                                font-size: 11px;
+                            }
+                        }
+                    }
+                    .orderDetails-icons {
+                        display: flex;
+                        flex-flow: column;
+                        align-items: flex-end;
+                        justify-content: space-between;
+                        height: 100%;
+                        div {
+                            display: flex;
+                            justify-content: flex-end;
+                            align-items: center;
+                            figure {
+                                margin: 0 4px;
+                            }
+                        }
+                    }
+                    ul {
+                        width: 100%;
+                        li {
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            padding: 7px 0;
+                            border-top: 1px solid rgba(128, 128, 128, 0.281);
+                            .food {
+                                color: #c2a17f;
+                                font-size: 12px;
+                            }
+                            .price {
+                                color: #a1a3a7;
+                                font-size: 12px;
+                            }
+                            .order-total {
+                                font-size: 12px;
+                                color: black;
+                            }
+                            .total-price {
+                                font-size: 12px;
+                                color: black;
+                            }
+                        }
+                    }
+                }
+                
+                //______________________________________filter style
+                .filter {
+                    width: 100%;
+                    overflow-y: scroll;
+                    margin-bottom: 70px;
+                    .filter-container {
+                        .filter-titles {
+                            width: 100%;
+                            background: #f2f5fc;
+                            text-align: left;
+                            padding: 10px;
+                            font-weight: bold;
+                            h3 {
+                                margin: 0;
+                                @extend .fz-13;
+                            }
+                        }
+                        .filter-dietary {
+                            ul {
+                                width: 100%;
+                                margin: 0;
+                                padding: 10px 35px;
+                                li {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    font-size: 13px;
+                                    input {
+                                        border-color: rgba(128, 128, 128, 0.226)
+                                    }
+                                }
+                            }
+                        }
+                        .filter-price-range {
+                            width: 100%;
+                            .range {
+                                width: 100%;
+                                .btn-group {
+                                    width: 80%;
+                                    .btn-outline-primary {
+                                        width: 100%;
+                                        background-color: white;
+                                        color: #90939a;
+                                        outline: none !important;
+                                        border: none !important;
+                                        font-weight: bold;
+                                    }
+                                    .active {
+                                        color: #07c0f6;
+                                        background-color: white;
+                                        outline: none !important;
+                                    }
+                                    .focus {
+                                        box-shadow: none !important;
+                                    }
+                                }
+                            }
+                        }
+                        .filter-rating {
+                            .rating-container {
+                                width: 50%;
+                                margin: auto;
+                                // disabling rating box border (bootstrapVue overWright)
+                                .form-control {
+                                    border: none !important;
+                                }
+                                svg {
+                                    transform: scale(1.2);
+                                    path {
+                                        fill: #26c99a;
+                                    }
+                                }
+                            }
+                            ul {
+                                width: 100%;
+                                margin: 0;
+                                padding: 10px 35px 20px;
+                                li {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    font-size: 13px;
+                                    input {
+                                        border-color: rgba(128, 128, 128, 0.226)
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                //_______________________________search market page style
+                .searchMarket {
+                    width: 100%;
+                    height: 100vh;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    .main-searchMarket {
+                        width: 100%;
+                        height: 100vh;
+                        overflow-y: scroll;
+                        display: flex;
+                        flex-flow: column;
+                        justify-content: flex-start;
+                        align-items: center;
+                        padding: 80px 15px 70px;
+                        header {
+                            width: 100%;
+                            h3 {
+                                text-align: left;
+                            }
+                        }
+                        .market-card {
+                            width: 100%;
+                            margin-right: 10px;
+                            position: relative;
+                            border: 1px solid #F2F5FC;
+                            border-radius: 7px;
+                            ma figure {
+                                /* border-radius: 7px;
+                                overflow: hidden; */
+                                position: relative;
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                            .main-info {
+                                width: 100%;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: flex-start;
+                                .market-info {
+                                    list-style-type: none;
+                                    padding-left: 5px;
+                                    text-align: left;
+                                    li {
+                                        color: #2F3033;
+                                        &:first-child {
+                                            font-weight: bold;
+                                        }
+                                        &:last-child {
+                                            padding-left: 11px;
+                                        }
+                                    }
+                                }
+                                .market-icons {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: flex-start;
+                                    svg {
+                                        margin: 0 5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                .lick-svg {
+                    path {
+                        fill: red;
+                    }
+                }
+                
+                .save-svg {
+                    path {
+                        fill: #07c0f6;
+                    }
                 }

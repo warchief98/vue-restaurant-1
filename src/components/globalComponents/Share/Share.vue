@@ -6,7 +6,7 @@
       </figure>
       <h1 class="fz-15 m-0">Share</h1>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid share-box-container">
       <div class="Share-box">
         <div class="Share-head">
           <h1>share that YMH Express</h1>
