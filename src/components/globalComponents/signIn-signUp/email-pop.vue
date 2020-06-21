@@ -10,8 +10,12 @@
       <label for="email" class="fz-14">Email</label>
       <input type="email" class="fz-14" id="email" placeholder="Email" />
     </div>
-    <button class="submit-btn lightBlue-bg" @click="verify = true">CONTINUE</button>
+
+    <!-- handle by @click="verify = true" to enter verify page or @click="password = true" to enter password page -->
+    <button class="submit-btn lightBlue-bg" @click="password = true">CONTINUE</button>
+    <!-- password page component-->
       <password-pop :password="password"></password-pop>
+      <!-- verify page component -->
       <verify-code v-if="verify" :verify="verify"></verify-code>
 
   </div>

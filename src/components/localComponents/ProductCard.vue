@@ -1,6 +1,6 @@
 <template>
   <div class="todays-hot-card">
-      this is product card component
+      <!-- this is product card component -->
     <router-link to="/Landing/Products/SelectCraft">
       <figure>
         <img src="@/assets/images/Product-1.jpg" alt />

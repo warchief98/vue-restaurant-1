@@ -11,7 +11,7 @@
     </header>
 
     <footer>
-      <button class="submit-btn lightBlue-bg">Continue</button>
+      <button class="submit-btn lightBlue-bg" @click="AccountDetailsClose">Continue</button>
     </footer>
   </div>
 </template>

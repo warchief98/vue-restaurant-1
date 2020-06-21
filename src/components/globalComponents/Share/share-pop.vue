@@ -8,7 +8,7 @@
     <div class="share-pop" :class="{'share-pop-come':sharePop}">
       <div class="share-box-head">
         <div class="share-box-app">
-          <carousel :per-page="4" :mouse-drag="true">
+          <carousel :per-page="4" :mouse-drag="true" :touchDrag="true">
             <slide v-for="test11 in 8" :key="test11">
               <div class="figure-box">
                 <div class="caption-img">
@@ -24,7 +24,7 @@
           </carousel>
         </div>
         <div class="share-box-app border-0 ">
-          <carousel :per-page="4" :mouse-drag="true">
+          <carousel :per-page="4" :mouse-drag="true" :touchDrag="true">
             <slide v-for="test12 in 8" :key="test12">
               <div class="figure-box">
                 <figure class="share-app-icons">

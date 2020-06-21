@@ -3,7 +3,7 @@
 
   <div class="navigation container-fluid">
     <div class="navi-items">
-      <router-link to="/">
+      <router-link to="/Landing">
         <img src="@/assets/icons/menu-icon-1.png" alt />
       </router-link>
     </div>

@@ -11,7 +11,11 @@
       <input type="password" class="fz-14" id="password" placeholder="password" />
       <button class="done-btn fz-12 mt-1" @click="forgetPassword = true">Forget Your Password?</button>
     </div>
-    <button class="submit-btn lightBlue-bg">LOGIN</button>
+    <!-- login btn  -->
+    <router-link to="/Landing">
+      <button class="submit-btn lightBlue-bg">LOGIN</button>
+    </router-link>
+    <!-- forget password component -->
     <forget-password v-if="forgetPassword" :forgetPassword="forgetPassword"></forget-password>
   </div>
 </template>

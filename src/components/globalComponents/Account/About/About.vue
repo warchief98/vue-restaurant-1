@@ -9,9 +9,9 @@
     </div>
 
     <ul>
-      <li @click="RatingAndReviews = true">Rating & Reviews</li>
-      <li @click="FAQs = !FAQs">FAQs</li>
-      <li>Legal</li>
+      <li class="fz-13" @click="RatingAndReviews = true">Rating & Reviews</li>
+      <li class="fz-13" @click="FAQs = !FAQs">FAQs</li>
+      <li class="fz-13 border-0">Legal</li>
     </ul>
     <rating-reviews v-show="RatingAndReviews" :RatingAndReviews="RatingAndReviews"></rating-reviews>
     <FAQs v-show="FAQs" :FAQs="FAQs"></FAQs>

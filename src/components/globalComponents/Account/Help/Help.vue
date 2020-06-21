@@ -1,17 +1,17 @@
 <template>
   <div class="FAQs" :class="{'FAQs-come' : Help,'over-flow':WriteEmail}">
+    <!-- About head -->
+    <div class="about-head-title">
+      <figure @click="HelpClose">
+        <img src="@/assets/icons/right-arrow.png" alt />
+      </figure>
+      <h1 class="fz-15 m-0">Help</h1>
+    </div>
     <div class="FAQs-container">
-      <!-- About head -->
-      <div class="about-head-title">
-        <figure @click="HelpClose">
-          <img src="@/assets/icons/right-arrow.png" alt />
-        </figure>
-        <h1 class="fz-15 m-0">Help</h1>
-      </div>
       <ul>
-        <li>Help With An Order</li>
-        <li>Help With Payment Methods</li>
-        <li>Anything Else?</li>
+        <li class="dark-text-color fz-13">Help With An Order</li>
+        <li class="dark-text-color fz-13">Help With Payment Methods</li>
+        <li class="dark-text-color fz-13">Anything Else?</li>
       </ul>
       <div>
         <div class="FAQs-box">
@@ -37,7 +37,7 @@
         </div>
       </div>
     </div>
-    <WriteEmail v-if="WriteEmail" :WriteEmail="WriteEmail"></WriteEmail>
+    <WriteEmail  :WriteEmail="WriteEmail"></WriteEmail>
   </div>
 </template>
 

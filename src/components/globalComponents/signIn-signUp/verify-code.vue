@@ -10,7 +10,7 @@
       <div class="main-title fz-13">
         <p>We've sent your 6-digit code to +4415206077921</p>
         <figure>
-
+          <img src="@/assets/icons/red-close.png" alt="">
         </figure>
       </div>
       <input type="number" class="fz-14" id="verify-code" placeholder="code" />

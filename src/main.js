@@ -16,6 +16,7 @@ import AccountDetailsPop1 from './components/globalComponents/Account/AccountDet
 import AccountDetailsPop2 from './components/globalComponents/Account/AccountDetails/AccountDetails-pop2.vue'
 import AccountDetailsPop3 from './components/globalComponents/Account/AccountDetails/AccountDetails-pop3.vue'
 import AccountDetailsPop4 from './components/globalComponents/Account/AccountDetails/AccountDetails-pop4.vue'
+import AccountDetailsPop5 from './components/globalComponents/Account/AccountDetails/AccountDetails-pop5.vue'
 import About from './components/globalComponents/Account/About/About.vue'
 import RatingAndReviews from './components/globalComponents/Account/About/Rating&Reviews.vue'
 import writeReviews from './components/globalComponents/Account/About/write-A-Review.vue'
@@ -48,6 +49,7 @@ import PickUpPopUp from './components/globalComponents/Bascket/PickUpPopUp.vue'
 import BascketOrder from './components/globalComponents/Bascket/BascketOrder.vue'
 import Suggestion from './components/globalComponents/Bascket/Suggestion.vue'
 
+
 // import Global components
 Vue.component('app-header', Header)
 Vue.component('app-nav', Navigation)
@@ -61,6 +63,7 @@ Vue.component('AccountDetails-pop1', AccountDetailsPop1)
 Vue.component('AccountDetails-pop2', AccountDetailsPop2)
 Vue.component('AccountDetails-pop3', AccountDetailsPop3)
 Vue.component('AccountDetails-pop4', AccountDetailsPop4)
+Vue.component('AccountDetails-pop5', AccountDetailsPop5)
 Vue.component('account-about', About)
 Vue.component('rating-reviews', RatingAndReviews)
 Vue.component('write-reviews', writeReviews)

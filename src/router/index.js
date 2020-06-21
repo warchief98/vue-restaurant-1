@@ -18,6 +18,11 @@ Vue.use(VueRouter)
 
 const routes = [{
         path: '/',
+        name: 'signUp',
+        component: signUp
+    },
+    {
+        path: '/Landing',
         name: 'Landing',
         component: Landing
     },
@@ -40,11 +45,6 @@ const routes = [{
         path: '/Landing/Products/SelectCraft',
         name: 'SelectCraft',
         component: SelectCraft
-    },
-    {
-        path: '/signUp',
-        name: 'signUp',
-        component: signUp
     },
     {
         path: '/Bascket',

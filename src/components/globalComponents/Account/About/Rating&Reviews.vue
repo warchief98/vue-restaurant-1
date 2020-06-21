@@ -48,7 +48,7 @@
         </div>
       </div>
     </div>
-    <write-reviews v-if="writeReviews " :writeReviews="writeReviews"></write-reviews>
+    <write-reviews :writeReviews="writeReviews"></write-reviews>
   </div>
 </template>
 

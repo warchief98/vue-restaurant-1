@@ -40,9 +40,9 @@
         <h3 class="select-subtitle fz-15 text-left mb-3">Most Popular</h3>
 
         <!-- with offer price -->
-        <SelectMenu v-for="test5 in 2" :key="test5" class="offer"></SelectMenu>
+        <SelectMenu v-for="offre in 2" :key="offre" class="offer"></SelectMenu>
         <!-- without offer price -->
-        <SelectMenu v-for="test16 in 2" :key="test16" class="added-number"></SelectMenu>
+        <SelectMenu v-for="offre2 in 2" :key="offre2" class="added-number"></SelectMenu>
       </div>
 
       <!-- _______________________________________salad box -->
@@ -53,9 +53,9 @@
 
       <div class="container-fluid">
         <!-- with offer price -->
-        <SelectSalad v-for="test1 in 2" :key="test1" class="offer added-number"></SelectSalad>
+        <SelectSalad v-for="salad in 2" :key="salad" class="offer added-number"></SelectSalad>
         <!-- without offer price -->
-        <SelectSalad v-for="test2 in 2" :key="test2" class="added-number"></SelectSalad>
+        <SelectSalad v-for="salad2 in 2" :key="salad2" class="added-number"></SelectSalad>
       </div>
 
       <!-- _______________________________________cold drink -->
@@ -66,8 +66,8 @@
 
       <div class="container-fluid">
         <!-- .sold-out for soldOot tag -->
-        <SelectDrink v-for="test3 in 2" :key="test3" class="sold-out"></SelectDrink>
-        <SelectDrink v-for="test4 in 2" :key="test4"></SelectDrink>
+        <SelectDrink v-for="drink in 2" :key="drink" class="sold-out"></SelectDrink>
+        <SelectDrink v-for="drink2 in 2" :key="drink2"></SelectDrink>
       </div>
     </div>
     <AddToBascket :AddToBascket="AddToBascket"></AddToBascket>

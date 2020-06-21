@@ -6,15 +6,15 @@
         <!-- ________________________________________________LowerMarsh block -->
         <div class="container-fluid lower-marsh">
           <!-- main-title -->
-          <div class="main-title">
+          <div class="main-title" @click="marketPopUp = true">
             <div>
               <img src="@/assets/icons/TodaysHotIcon.png" alt class="title-icon" />
               <h2 class="fz-15 dark-text-color">LowerMarsh Market</h2>
               <img src="@/assets/icons/drop down.png" alt class="rectangle" />
             </div>
           </div>
-          <div class="all-roll">
-            <market-card></market-card>
+          <div class="all-roll d-flex justify-content-start justify-content-lg-center">
+            <market-card v-for="test20 in 3" :key="test20"></market-card>
             <market-card class="comming-soon"></market-card>
           </div>
         </div>
@@ -33,9 +33,9 @@
             </a>
           </router-link>
 
-          <div class="all-roll">
+          <div class="all-roll d-flex justify-content-start justify-content-lg-center">
             <!-- todays hot component 1 -->
-            <todays-hot v-for="test13 in 2" :key="test13"></todays-hot>
+            <todays-hot v-for="test13 in 5" :key="test13"></todays-hot>
             <todays-hot class="discount"></todays-hot>
           </div>
         </div>
@@ -55,19 +55,19 @@
             </a>
           </router-link>
 
-          <div class="all-roll">
+          <div class="all-roll d-flex justify-content-start justify-content-lg-center">
             <!-- sell card (product) component 1 -->
-            <Product v-for="test14 in 3" :key="test14"></Product>
+            <Product v-for="test14 in 5" :key="test14"></Product>
           </div>
         </div>
         <!-- ________________________________________________navigation menu -->
         <app-nav></app-nav>
 
         <!--_______________________________________________________ dark cover -->
-        <div class="dark-cover" v-if="marketPopUp"></div>
+        <div class="dark-cover" v-if="marketPopUp" @click="marketPopUp = false"></div>
 
         <!--_______________________________________________________ market pop up -->
-        <market-pop-up v-if="marketPopUp"></market-pop-up>
+        <market-pop-up :class="{'market-pop-up-come':marketPopUp}"></market-pop-up>
       </div>
     </div>
   </div>

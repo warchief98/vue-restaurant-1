@@ -17,7 +17,7 @@
     <!-- Account section -->
     <ul>
       <li @click="AccountDetails = !AccountDetails">Account Details</li>
-      <li>Payment Methods</li>
+      <router-link to="/Payment"><li>Payment Methods</li></router-link>
       <li @click="About = !About">About</li>
       <li @click="Help = !Help">Help</li>
       <li @click="signOut= !signOut">Sing Out</li>

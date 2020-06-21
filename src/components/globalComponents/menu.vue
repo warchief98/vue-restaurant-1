@@ -35,8 +35,10 @@
           ACCOUNT
         </li>
         <li>
+          <router-link to="/orders">
           <img src="@/assets/icons/order-icon.png" alt />
           ORDER HISTORY
+          </router-link>
         </li>
         <li @click="closeMenu">
           <router-link to="/Landing/LowerMarket">

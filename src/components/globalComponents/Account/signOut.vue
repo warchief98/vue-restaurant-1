@@ -21,7 +21,7 @@ export default {
   props: ["signOut"],
   methods:{
       signOutClose(){
-          eventBus.$emit('loginOutClose', false)
+          eventBus.$emit('signOutClose', false)
       }
   }
 };

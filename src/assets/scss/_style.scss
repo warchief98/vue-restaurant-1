@@ -138,8 +138,8 @@
                 /* _________________________________________________________market component */
                 
                 .all-roll {
+                    min-width: 100%;
                     width: max-content;
-                    display: flex;
                 }
                 
                 .info-pop-1 {
@@ -609,7 +609,7 @@
                             list-style-type: none;
                             padding: 0;
                             margin: 0;
-                            padding-left: 40px;
+                            padding: 0 40px;
                             li {
                                 border-top: 1px solid silver;
                                 text-align: left;
@@ -641,118 +641,124 @@
                     left: 0;
                     transform: translateY(100%);
                     transition: .5s;
-                    .Account-head {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        flex-flow: column;
-                        padding: 20px 0 15px 0;
-                        figure {
-                            width: 88px;
-                            height: 88px;
-                            border-radius: 50%;
-                            margin-bottom: 10px;
-                            position: relative;
-                            margin-bottom: 10px;
-                            img {
-                                width: 100%;
-                                transform: scale(1);
-                                margin: 0;
-                            }
-                            .profile-btn {
-                                position: absolute;
-                                width: 32px;
-                                height: 32px;
-                                background-color: white;
-                                box-shadow: 0 0 5px rgba(0, 0, 0, 0.433);
+                    .account-details-scroll-part {
+                        width: 100%;
+                        height: 100%;
+                        padding-top: 60px;
+                        overflow-y: scroll;
+                        .Account-head {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-flow: column;
+                            padding: 20px 0 15px 0;
+                            figure {
+                                width: 88px;
+                                height: 88px;
                                 border-radius: 50%;
-                                bottom: -6px;
-                                left: -3px;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
+                                margin-bottom: 10px;
+                                position: relative;
+                                margin-bottom: 10px;
                                 img {
                                     width: 100%;
-                                    width: 50%;
-                                }
-                            }
-                        }
-                        section {
-                            h3 {
-                                font-weight: bold;
-                            }
-                        }
-                        * {
-                            margin: 0;
-                        }
-                    }
-                    .form-Details {
-                        width: 100%;
-                        ul {
-                            width: 100%;
-                            padding: 0 35px;
-                            li {
-                                width: 100%;
-                                flex-flow: column;
-                                justify-content: center;
-                                align-items: flex-start;
-                                padding: 10px 0;
-                                font-size: 15px;
-                                border: none;
-                                .header {
-                                    width: 100%;
-                                    display: flex;
-                                    justify-content: space-between;
-                                    align-items: center;
-                                    font-size: 16px;
-                                    h3 {
-                                        font-weight: bold;
-                                    }
-                                    div {
-                                        p {
-                                            @extend .gray-text-color;
-                                            margin: 0;
-                                            font-size: 11px;
-                                            padding: 0 5px;
-                                        }
-                                    }
-                                }
-                                .information-user {
-                                    width: 100%;
-                                    border-bottom: 1px solid silver;
-                                    @extend .gray-text-color;
-                                    font-size: 14px;
+                                    transform: scale(1);
                                     margin: 0;
                                 }
+                                .profile-btn {
+                                    position: absolute;
+                                    width: 32px;
+                                    height: 32px;
+                                    background-color: white;
+                                    box-shadow: 0 0 5px rgba(0, 0, 0, 0.433);
+                                    border-radius: 50%;
+                                    bottom: -6px;
+                                    left: -3px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    img {
+                                        width: 100%;
+                                        width: 50%;
+                                    }
+                                }
+                            }
+                            section {
+                                h3 {
+                                    font-weight: bold;
+                                }
+                            }
+                            * {
+                                margin: 0;
                             }
                         }
-                        footer {
-                            padding: 0 35px;
-                            h3 {
-                                text-align: left;
-                                font-weight: bold;
-                            }
+                        .form-Details {
+                            width: 100%;
                             ul {
-                                padding: 0;
+                                width: 100%;
+                                padding: 0 35px;
                                 li {
                                     width: 100%;
-                                    display: flex;
-                                    justify-content: space-between;
-                                    align-items: center;
-                                    flex-flow: row nowrap;
-                                    font-weight: bold;
-                                    .disconnect {
-                                        background: #c9751b;
-                                        color: white;
-                                        border: none;
-                                        outline: none;
-                                        padding: 5px 7px;
-                                        border-radius: 5px;
-                                        font-weight: normal;
+                                    flex-flow: column;
+                                    justify-content: center;
+                                    align-items: flex-start;
+                                    padding: 10px 0;
+                                    font-size: 15px;
+                                    border: none;
+                                    .header {
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        font-size: 16px;
+                                        h3 {
+                                            font-weight: bold;
+                                        }
+                                        div {
+                                            p {
+                                                @extend .gray-text-color;
+                                                margin: 0;
+                                                font-size: 11px;
+                                                padding: 0 5px;
+                                            }
+                                        }
                                     }
-                                    P {
-                                        color: silver;
-                                        border: none;
+                                    .information-user {
+                                        width: 100%;
+                                        border-bottom: 1px solid silver;
+                                        @extend .gray-text-color;
+                                        font-size: 14px;
+                                        margin: 0;
+                                    }
+                                }
+                            }
+                            footer {
+                                padding: 0 35px;
+                                h3 {
+                                    text-align: left;
+                                    font-weight: bold;
+                                }
+                                ul {
+                                    padding: 0;
+                                    li {
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        flex-flow: row nowrap;
+                                        font-weight: bold;
+                                        .disconnect {
+                                            background: #c9751b;
+                                            color: white;
+                                            border: none;
+                                            outline: none;
+                                            padding: 5px 7px;
+                                            border-radius: 5px;
+                                            font-weight: normal;
+                                        }
+                                        P {
+                                            color: silver;
+                                            border: none;
+                                        }
                                     }
                                 }
                             }
@@ -768,6 +774,11 @@
                     align-items: center;
                     flex-flow: row nowrap;
                     padding: 6px 15px;
+                    background: white;
+                    z-index: 5;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
                     img {
                         width: 18px;
                         transform: rotate(180deg);
@@ -795,6 +806,7 @@
                     justify-content: space-between;
                     align-items: center;
                     transition: .5s;
+                    z-index: 6;
                     header {
                         width: 100%;
                         .close-box {
@@ -866,6 +878,8 @@
                     ul {
                         padding: 15px 35px 0;
                         li {
+                            padding: 20px 0;
+                            text-align: left;
                             border-top: none;
                             border-bottom: 1px solid silver;
                         }
@@ -880,6 +894,10 @@
                     flex-flow: row nowrap;
                     padding: 8px 15px 13px;
                     border-bottom: 2px solid rgba(192, 192, 192, 0.371);
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    background: white;
                     position: relative;
                     figure {
                         margin: 0;
@@ -1106,6 +1124,9 @@
                     height: 100vh;
                     transform: translateY(100%);
                     transition: 0.5s;
+                    * {
+                        @extend .dark-text-color;
+                    }
                     .FAQs-box {
                         margin-top: 20px;
                         .FAQs-title-box {
@@ -1127,15 +1148,20 @@
                             padding: 10px 35px;
                             text-align: right;
                             @extend .fz-12;
+                            .done-btn {
+                                @extend .lightBlue-color;
+                            }
                         }
                     }
                     .FAQs-container {
                         overflow-y: scroll;
                         width: 100%;
-                        height: 100vh;
+                        height: calc(100vh - 41px);
                         Ul {
                             padding: 10px 35px 35px;
                             li {
+                                padding: 20px 0;
+                                text-align: left;
                                 border-top: none;
                                 border-bottom: 2px solid rgba(192, 192, 192, 0.671);
                                 &:last-child {
@@ -1501,7 +1527,7 @@
                     z-index: 5;
                     figure {
                         position: absolute;
-                        top: 3%;
+                        top: 50px;
                         left: 25px;
                     }
                 }
@@ -1512,14 +1538,59 @@
                 }
                 
                 //  _______________________________________________market
+                .market-comming-soon {
+                    border: none !important;
+                    &:hover {
+                        background-color: white;
+                    }
+                    .market-block {
+                        width: 100%;
+                        position: relative;
+                        height: 170px;
+                        &::before {
+                            content: "";
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            background-color: white;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                        }
+                        &::after {
+                            content: "Comming Soon";
+                            line-height: 50px;
+                            color: white;
+                            padding: 0 0 0 15px;
+                            font-size: 16px;
+                            display: block;
+                            width: 170px;
+                            height: 50px;
+                            @extend .gold-bg;
+                            position: absolute;
+                            top: 60px;
+                            left: 50%;
+                            transform: translateX(-50%) rotateZ(90deg);
+                            clip-path: polygon(0 0, 100% 0, calc(100% - 25px) 50%, 100% 100%, 0 100%);
+                        }
+                    }
+                }
+                
                 .market {
                     width: 100%;
                     position: fixed;
+                    min-height: 50vh;
                     z-index: 3;
                     bottom: 0;
                     left: 0;
                     background-color: white;
                     z-index: 6;
+                    transition: 0.5s;
+                    transform: translateY(100%);
+                }
+                
+                .market-pop-up-come {
+                    transform: translateY(0);
                 }
                 
                 .market>div {
@@ -1528,14 +1599,12 @@
                     transition: 0.1s;
                     cursor: pointer;
                     padding: 10px 0 10px 0;
-                }
-                
-                .market>div:hover {
-                    background-color: #07C1F6;
-                }
-                
-                .market>div:hover * {
-                    color: white;
+                    .market-block-container {
+                        border-bottom: 1px solid rgba(192, 192, 192, 0.5);
+                        &:hover {
+                            background-color: #07C1F6;
+                        }
+                    }
                 }
                 
                 .marget h3 {
@@ -1545,6 +1614,7 @@
                 .market-block {
                     width: 80%;
                     margin: auto;
+                    text-align: left;
                 }
                 
                 //______________________________orders pages
@@ -1976,9 +2046,15 @@
                 //______________________________________filter style
                 .filter {
                     width: 100%;
-                    overflow-y: scroll;
-                    margin-bottom: 70px;
+                    height: 100vh;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
                     .filter-container {
+                        overflow-y: scroll;
+                        width: 100%;
+                        height: calc(100vh - 111px);
+                        position: relative;
                         .filter-titles {
                             width: 100%;
                             background: #f2f5fc;
@@ -2092,7 +2168,7 @@
                             position: relative;
                             border: 1px solid #F2F5FC;
                             border-radius: 7px;
-                            ma figure {
+                            figure {
                                 /* border-radius: 7px;
                                 overflow: hidden; */
                                 position: relative;
