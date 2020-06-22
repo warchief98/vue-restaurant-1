@@ -24,7 +24,11 @@
             </div>
           </div>
           <p>12:36</p>
+          <span class="tick-container">
+            <img src="@/assets/icons/tick-icon.png" alt />
+          </span>
         </li>
+
         <li>
           <div class="Upcoming-main-box">
             <figure>
@@ -36,7 +40,11 @@
             </div>
           </div>
           <p>12:36</p>
+          <span class="tick-container">
+            <img src="@/assets/icons/tick-icon.png" alt />
+          </span>
         </li>
+
         <li>
           <div class="Upcoming-main-box">
             <figure>
@@ -48,7 +56,12 @@
             </div>
           </div>
           <p>13:15</p>
+          <!-- active-tick class help to change tick style(tick-container) to active tick style -->
+          <span class="tick-container active-tick">
+            <img src="@/assets/icons/tick-icon.png" alt />
+          </span>
         </li>
+
         <li class="Upcoming-inactive">
           <div class="Upcoming-main-box">
             <figure>
@@ -59,7 +72,11 @@
               <p>You can Pick up in 5 Minutes</p>
             </div>
           </div>
+          <span class="tick-container">
+            <img src="@/assets/icons/tick-icon.png" alt />
+          </span>
         </li>
+
         <li class="Upcoming-inactive">
           <div class="Upcoming-main-box">
             <figure>
@@ -70,7 +87,11 @@
               <p>We are Waiting for you</p>
             </div>
           </div>
+          <span class="tick-container">
+            <img src="@/assets/icons/tick-icon.png" alt />
+          </span>
         </li>
+
         <li class="Upcoming-inactive">
           <div class="Upcoming-main-box">
             <figure>
@@ -81,30 +102,33 @@
               <p>Your order is complete</p>
             </div>
           </div>
+          <span class="tick-container">
+            <img src="@/assets/icons/tick-icon.png" alt />
+          </span>
         </li>
       </ul>
     </div>
     <footer v-if="completeOrder">
-      <button class="submit-btn">Thanks for Trusting Us </button>
+      <button class="submit-btn">Thanks for Trusting Us</button>
     </footer>
     <inviteFriends :invite="invite"></inviteFriends>
   </div>
 </template>
 
 <script>
-import { eventBus } from '@/main.js'
+import { eventBus } from "@/main.js";
 
 export default {
-  data(){
-    return{
-      completeOrder:false,
-      invite:false,
-    }
+  data() {
+    return {
+      completeOrder: false,
+      invite: false
+    };
   },
-  created(){
-    eventBus.$on('inviteClose',(close) =>{
+  created() {
+    eventBus.$on("inviteClose", close => {
       this.invite = close;
-    })
+    });
   }
 };
 </script>

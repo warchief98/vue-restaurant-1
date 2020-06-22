@@ -7,7 +7,7 @@
       <!-- About head -->
       <div class="about-head-title">
         <figure @click="AboutRatingClose">
-          <img src="@/assets/icons/left-arrow-circle.png" alt />
+          <img src="@/assets/icons/right-arrow.png" alt />
         </figure>
         <h1 class="fz-18 m-0">Rating&Reviews</h1>
       </div>
