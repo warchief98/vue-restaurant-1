@@ -1,6 +1,6 @@
 <template>
   <div class="bot-menu-padding">
-    <div class="container-fluid m-0 p-0">
+    <div class="container-fluid container-ex m-0 p-0">
       <figure class="header-pic">
         <img src="@/assets/images/header-pic-2.jpg" alt />
         <figcaption>
@@ -11,7 +11,7 @@
       </figure>
     </div>
     <div>
-      <div class="container-fluid select-food-main">
+      <div class="container-fluid container-ex select-food-main">
         <div>
           <h3 class="fz-20">Hungry Llama</h3>
           <div class="rate">
@@ -32,11 +32,11 @@
         </div>
       </div>
       <!-- _______________________________________menu -->
-      <div class="container-fluid gray-bg">
+      <div class="container-fluid container-ex gray-bg">
         <h2 class="fz-15 dark-text-color py-3 text-left">Hand Craft</h2>
       </div>
 
-      <div class="container-fluid">
+      <div class="container-fluid container-ex">
         <h3 class="select-subtitle fz-15 text-left mb-3">Most Popular</h3>
         <!-- without offer price -->
         <!-- .added number to show little box number -->

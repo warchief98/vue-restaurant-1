@@ -1,28 +1,28 @@
 <template>
   <div>
     <div class="Landing">
-      <div class="main-wrapper container-fluid">
+      <div class="main-wrapper container-fluid container-ex">
         <app-header></app-header>
         <!-- ________________________________________________LowerMarsh block -->
-        <div class="container-fluid lower-marsh">
+        <div class="lower-marsh">
           <!-- main-title -->
           <div class="main-title" @click="marketPopUp = true">
             <div>
               <img src="@/assets/icons/TodaysHotIcon.png" alt class="title-icon" />
-              <h2 class="fz-15 dark-text-color">LowerMarsh Market</h2>
+              <h2 class="fz-15 dark-text-color">Markets</h2>
               <img src="@/assets/icons/drop down.png" alt class="rectangle" />
             </div>
           </div>
           <div class="all-roll d-flex justify-content-start justify-content-lg-center">
-            <market-card v-for="test20 in 3" :key="test20"></market-card>
-            <market-card class="comming-soon"></market-card>
+            <market-card v-for="test20 in 1" :key="test20"></market-card>
+            <MarketCardSoon class="comming-soon"></MarketCardSoon>
           </div>
         </div>
 
         <!-- ________________________________________________todays hot block -->
-        <div class="todays-hot container-fluid">
+        <div class="todays-hot">
           <!-- mainTitle -->
-          <router-link to="/Landing/LowerMarket" class="main-title">
+          <router-link to="/Landing/todays-hot" class="main-title">
             <div>
               <img src="@/assets/icons/TodaysHotIcon.png" alt class="title-icon" />
               <h2 class="fz-15 dark-text-color">Todays Hot Food</h2>
@@ -41,12 +41,12 @@
         </div>
 
         <!-- ________________________________________________product -->
-        <div class="product container-fluid">
+        <div class="product">
           <!-- mainTitle -->
           <router-link to="/Landing/Products" class="main-title">
             <div>
               <img src="@/assets/icons/productIcon.png" alt class="title-icon" />
-              <h2 class="fz-15 dark-text-color">Product</h2>
+              <h2 class="fz-15 dark-text-color">Produce & Craft</h2>
               <img src="@/assets/icons/drop down.png" alt class="rectangle" />
             </div>
 
@@ -75,6 +75,7 @@
 
 <script>
 import MarketCard from "../components/localComponents/MarketCard";
+import MarketCardSoon from "../components/localComponents/MarketCardSoon";
 import TodaysHot from "../components/localComponents/TodaysHot";
 import Product from "../components/localComponents/Product";
 import MarketPopUp from "../components/localComponents/MarketPopUp";
@@ -87,6 +88,7 @@ export default {
   },
   components: {
     MarketCard: MarketCard,
+    MarketCardSoon:MarketCardSoon,
     TodaysHot: TodaysHot,
     Product: Product,
     MarketPopUp: MarketPopUp

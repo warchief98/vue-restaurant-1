@@ -44,7 +44,7 @@
           </li>
         </ul>
       </div>
-      <footer class="container-fluid">
+      <footer class="container-fluid container-ex">
         <button class="submit-btn lightBlue-bg mb-1" @click="sortingClose2">Apply</button>
       </footer>
     </div>

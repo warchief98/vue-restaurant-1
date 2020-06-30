@@ -6,10 +6,10 @@
       </figure>
       <h1 class="fz-15 m-0">Sign Up Or Log In With Email</h1>
     </header>
-    <div class="main-email">
-      <label for="password" class="fz-14">password</label>
-      <input type="password" class="fz-14" id="password" placeholder="password" />
-      <button class="done-btn fz-12 mt-1" @click="forgetPassword = true">Forget Your Password?</button>
+    <div class="main-email py-0">
+      <label for="password" class="fz-14">Password</label>
+      <input type="password" class="fz-14" id="password" placeholder="Password" />
+      <button class="done-btn fz-12 mt-2" @click="forgetPassword = true">Forget Your Password?</button>
     </div>
     <!-- login btn  -->
     <router-link to="/Landing">

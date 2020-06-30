@@ -22,13 +22,23 @@
             }
             .login-btn {
                 width: 100%;
-                height: 45px;
+                height: 48px;
                 background-color: white;
                 border: 1px solid silver;
-                border-radius: 7px;
+                border-radius: 5px;
                 outline: none !important;
-                font-size: 14px;
+                @extend .fz-15;
                 font-weight: bold;
+            }
+            .email-login-btn {
+                border: 1px solid #07C1F6;
+                @extend .lightBlue-color;
+                border-radius: 5px;
+                outline: none !important;
+                @extend .fz-15;
+                width: 100%;
+                height: 48px;
+                background-color: white;
             }
         }
         .lined-title {
@@ -49,17 +59,17 @@
         .lined-title-signOut {
             width: 100%;
             height: 1px;
-            background-color: #d1ce6e;
+            background-color: #DCDFE5;
             position: relative;
             &::after {
-                content: "Or continue with email";
+                content: "Or";
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                color: #d1ce6e;
+                @extend .gray-text-color;
                 transform: translate(-50%, -50%);
                 background-color: white;
-                padding: 0 5px;
+                padding: 0 13px;
             }
         }
     }
@@ -77,19 +87,34 @@
         left: 0;
         background: white;
         transform: translateY(100%);
+        .about-head-title {
+            margin: 45px 0px 41px;
+            padding: 0 13px;
+            figure {
+                border-radius: 50%;
+                box-shadow: 0px 0px 3px 2px #e9e8e8ad;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
         .main-email {
             display: flex;
             flex-flow: column;
             justify-content: space-between;
             align-items: flex-start;
-            padding: 15px 35px;
+            padding: 0 35px;
             input {
                 width: 100%;
+                height: 40px;
                 border: none;
                 background: #f2f5fc;
                 outline: none !important;
                 padding: 8px 5px;
                 border-radius: 5px;
+                margin: 15px 0 19px;
             }
             .done-btn {
                 color: #d3ce6f;
@@ -141,7 +166,7 @@
                     padding: 25px 0;
                     font-size: 15px;
                     border: none;
-                    border-bottom: 1px solid silver;
+                    border-bottom: 1px solid #DCDFE5;
                     .header {
                         width: 100%;
                         display: flex;
@@ -208,15 +233,231 @@
                 align-items: flex-start;
                 flex-flow: column;
                 width: 100%;
-                padding: 20px 35px;
+                padding: 0 35px;
                 input {
                     width: 100%;
+                    height: 40px;
                     border-radius: 5px;
                     background: #f2f5fc;
                     border: none;
                     padding: 3px;
                     color: silver;
                 }
+            }
+        }
+    }
+    
+    //_________________________facebok-permit component
+    .facebook-permit-come {
+        transform: translate(-50%, -50%) !important;
+    }
+    
+    .facebook-permit {
+        width: 270px;
+        height: 163px;
+        border-radius: 10px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 300%);
+        background: #F2F2F2;
+        transition: 0.5s all;
+        z-index: 5;
+        padding-top: 19px;
+        overflow: hidden;
+        footer {
+            width: 100%;
+            height: 43px;
+            position: fixed;
+            bottom: 0;
+            button {
+                width: 50%;
+                height: 100%;
+                border: none;
+                border-top: .5px solid #707070;
+                outline: none !important;
+                color: #2999FF;
+                &:first-child {
+                    border-right: .5px solid #707070;
+                }
+            }
+        }
+    }
+    
+    //___________________________login-facebook component
+    .login-facebook-come {
+        transform: translateY(0) !important;
+    }
+    
+    .login-facebook {
+        width: 100%;
+        height: calc(100vh - 54px);
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        background-color: white;
+        transform: translateY(100%);
+        overflow-y: scroll;
+        transition: .5s all;
+        header {
+            width: 100%;
+            height: 52px;
+        }
+        .facebook-text-box {
+            width: 100%;
+            height: 41px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #304269;
+        }
+        .facebook-box {
+            padding-top: 17px;
+            overflow-y: auto;
+            .facebook-header {
+                padding: 0 73px 53px;
+            }
+            .facebook-main {
+                padding-bottom: 124px;
+                p {
+                    margin-top: 14px;
+                }
+            }
+        }
+    }
+    
+    //______________________openfacebook component
+    .open-facebook-come {
+        transform: translate(-50%, -50%) !important;
+    }
+    
+    .open-facebook {
+        border-radius: 10px;
+        position: fixed;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, 300%);
+        background: #F2F2F2;
+        transition: 0.5s all;
+        z-index: 5;
+        width: 332px;
+        height: 94px;
+        box-shadow: 0px 3px 6px rgba( 0, 0, 0, .16);
+        padding: 15px 21px;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        @media screen and(max-width: 350px) {
+            width: 300px;
+        }
+        h2 {
+            color: #000002;
+        }
+        .facebook-btn-box {
+            text-align: right;
+            button {
+                &:first-child {
+                    margin-right: 31px;
+                }
+            }
+        }
+    }
+    
+    //____________________________confirmation facebook
+    .confirmation-facebook-come {
+        transform: translate(-50%, -50%) !important;
+    }
+    
+    .confirmation-facebook {
+        width: 270px;
+        height: 128px;
+        border-radius: 10px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 300%);
+        background: #F2F2F2;
+        transition: 0.5s all;
+        z-index: 5;
+        padding-top: 19px;
+        overflow: hidden;
+        footer {
+            width: 100%;
+            height: 43px;
+            position: fixed;
+            bottom: 0;
+            button {
+                width: 50%;
+                height: 100%;
+                border: none;
+                border-top: .5px solid #D0D0D0;
+                outline: none !important;
+                color: #2999FF;
+                &:first-child {
+                    border-right: .5px solid #D0D0D0;
+                }
+            }
+        }
+    }
+    
+    //___________________________login-With-Facebook component
+    .login-With-Facebook-come {
+        transform: translateY(0) !important;
+    }
+    
+    .login-With-Facebook {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        transform: translateY(100%);
+        transition: .5s all;
+        background-color: #F2F5FC;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        header {
+            width: 100%;
+            height: 95px;
+            padding: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            background-color: white;
+        }
+        .container-scroll {
+            height: calc(100vh - 95px);
+            overflow: auto;
+            width: 100%;
+            main {
+                margin-top: 170px;
+                margin-bottom: 185px;
+                .main-head {
+                    display: flex;
+                    flex-flow: column;
+                    align-items: center;
+                    margin-bottom: 152px;
+                    h2 {
+                        width: 197px;
+                        margin: 0;
+                    }
+                }
+                .main-body {
+                    display: flex;
+                    flex-flow: column;
+                    align-items: center;
+                    .submit-btn {
+                        width: 197px;
+                        height: 48px;
+                        background-color: #3577E5;
+                        color: white;
+                        margin: 25px 0 36px;
+                    }
+                }
+            }
+            footer {
+                margin-bottom: 18px;
             }
         }
     }

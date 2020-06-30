@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="container-fluid small-bascket">
+        <div class="container-fluid container-ex small-bascket">
             <span class="count-btn">2</span>
             <router-link to="/Bascket">
                 <p class="fz-15">VIEW BASCKET</p>

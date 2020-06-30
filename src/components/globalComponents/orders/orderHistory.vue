@@ -6,7 +6,7 @@
       <figure><img src="@/assets/icons/market.png" alt=""></figure>
       <span></span>
     </div>
-    <div class="orderHistory-box container-fluid" v-for="test in 5" :key="test">
+    <div class="orderHistory-box container-fluid container-ex" v-for="test in 5" :key="test">
       <div class="orderHistory-food">
         <div class="food">
           <p>1x SAndwich</p>

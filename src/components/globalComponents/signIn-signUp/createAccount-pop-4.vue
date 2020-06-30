@@ -8,13 +8,14 @@
         <h1 class="fz-15 m-0">Create Account</h1>
       </header>
       <div class="forms">
-        <label class="fz-15" for="Password">Enter your Password</label>
-        <input class="fz-15" type="password" id="Password" v-model="Password" />
+        <label class="fz-13 mb-3" for="Password">Password</label>
+        <input class="fz-14 pl-3" type="password" placeholder="********" id="Password" v-model="Password" />
+        <p class="fz-12 gray-text-color mt-1"> password must contain at least 8 character</p>
       </div>
     </div>
 
     <footer>
-      <button class="submit-btn lightBlue-bg">Continue</button>
+      <button class="submit-btn lightBlue-bg fz-15">CREATE ACCOUNT</button>
     </footer>
   </div>
 </template>

@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="dark-cover" v-if="AddToBascket" @click="AddToBascketClose"></div>
-        <div class="bascket-pop-up-container container-fluid py-2" :class="{'bascket-pop-up-container-come':AddToBascket}">
+        <div class="bascket-pop-up-container container-fluid container-ex py-2" :class="{'bascket-pop-up-container-come':AddToBascket}">
             <header>
                 <span class="fz-20">Sandwich</span>
                 <span class="gray-text-color fz-18">£8.85</span>

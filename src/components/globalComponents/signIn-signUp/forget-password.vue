@@ -6,7 +6,7 @@
       </figure>
       <h1 class="fz-15 m-0">Forget Your Password?</h1>
     </header>
-    <div class="main-email">
+    <div class="main-email py-0">
       <label for="email" class="fz-12 text-left">Enter Your Email and we'll send the instructions.</label>
       <input type="Email" class="fz-14" id="email" placeholder="Pegah@Gmail.Com" />
     </div>

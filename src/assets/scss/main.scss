@@ -4,10 +4,16 @@
 @import './style2.scss';
 @import './login';
 @import './select-food';
+@font-face {
+    font-family: Lato;
+    src: url(../fonts/Lato-Regular.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Lato;
 }
 
 ul {
@@ -31,13 +37,17 @@ p {
 
 .main-wrapper {
     position: relative;
-    padding-bottom: 75px;
-    padding-top: 60px;
+    padding-bottom: 75px !important;
+    padding-top: 100px !important;
     .Landing {
         width: 100%;
         height: 100vh;
         overflow: hidden;
     }
+}
+
+.container-ex {
+    padding: 0 13px;
 }
 
 .submit-btn {
@@ -93,14 +103,25 @@ p {
 
 .lower-marsh {
     overflow: hidden;
+    margin-bottom: 8px;
 }
 
 .todays-hot {
     overflow: hidden;
+    margin-bottom: 8px;
 }
 
 .product {
     overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.lh-11 {
+    line-height: 11px;
+}
+
+.lh-16 {
+    line-height: 16px;
 }
 
 .fz-30 {
@@ -113,6 +134,10 @@ p {
 
 .fz-18 {
     font-size: 18px;
+}
+
+.fz-17 {
+    font-size: 17px;
 }
 
 .fz-16 {
@@ -160,6 +185,10 @@ p {
     background-color: #F2F5FC;
 }
 
+.green-text-color {
+    color: #26C99A !important;
+}
+
 .discount-text-color {
     color: #C93A5C;
 }
@@ -193,12 +222,24 @@ p {
     background-color: #4167b2 !important;
 }
 
+.blue-bgc {
+    background-color: #264D9A;
+}
+
+.blue-color {
+    color: #264D9A;
+}
+
+.blue-med-color {
+    color: #2283F5;
+}
+
 .lightBlue-bg {
-    background-color: #07c0f6;
+    background-color: #07C1F6;
 }
 
 .lightBlue-color {
-    color: #07c0f6 !important;
+    color: #07C1F6 !important;
 }
 
 .lightGreen-bg {
@@ -207,6 +248,10 @@ p {
 
 .lightGreen-color {
     color: #26C99A;
+}
+
+.border-color {
+    border-color: #DCDFE5;
 }
 
 .count-btn {
@@ -234,4 +279,36 @@ p {
     color: white;
     border-radius: 5px;
     color: #07c0f6 !important;
+}
+
+.m-b-21 {
+    margin-bottom: 21px;
+}
+
+.m-t-8 {
+    margin-top: 8px;
+}
+
+.p-x-19 {
+    padding: 0 19px;
+}
+
+.p-x-73 {
+    padding: 0 73px;
+}
+
+.p-t-20 {
+    padding-top: 20px;
+}
+
+.p-l-8 {
+    padding-left: 8px;
+}
+
+.p-l-23 {
+    padding-left: 23px;
+}
+
+.height-38 {
+    height: 38px;
 }

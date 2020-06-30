@@ -5,7 +5,7 @@
       class="bascket-pop-up-container"
       :class="{'bascket-pop-up-container-come':PaymentEditDelete}"
     >
-      <div class="edit-delete container-fluid">
+      <div class="edit-delete container-fluid container-ex">
         <div>
           <h2 class="fz-18 fw-bold pb-3">Payment</h2>
           <p class="fz-15">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>

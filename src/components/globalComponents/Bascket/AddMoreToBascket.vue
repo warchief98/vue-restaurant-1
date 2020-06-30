@@ -2,7 +2,7 @@
   <div>
     <div class="dark-cover" v-if="addMoreToBascket" @click="AddMoreToBascketClose"></div>
     <div
-      class="bascket-pop-up-container container-fluid py-2"
+      class="bascket-pop-up-container container-fluid container-ex py-2"
       :class="{'bascket-pop-up-container-come':addMoreToBascket}"
     >
       <header>

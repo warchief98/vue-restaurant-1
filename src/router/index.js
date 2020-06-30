@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Landing from '../views/Landing.vue'
-import LowerMarket from '../views/LowerMarket/index.vue'
-import selectFood from '../views/LowerMarket/SelectFood/index.vue'
+import todaysHot from '../views/todays-hot/index.vue'
+import selectFood from '../views/todays-hot/SelectFood/index.vue'
 import Products from '../views/Product/index.vue'
 import SelectCraft from '../views/Product/SelectCraft/index.vue'
 import signUp from '../views/signUp.vue'
@@ -27,12 +27,12 @@ const routes = [{
         component: Landing
     },
     {
-        path: '/Landing/LowerMarket',
-        name: 'LowerMarket',
-        component: LowerMarket
+        path: '/Landing/Todays-Hot',
+        name: 'todaysHot',
+        component: todaysHot
     },
     {
-        path: '/Landing/LowerMarket/SelectFood',
+        path: '/Landing/Todays-Hot/SelectFood',
         name: 'selectFood',
         component: selectFood
     },

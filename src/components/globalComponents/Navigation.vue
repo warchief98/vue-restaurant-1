@@ -1,7 +1,7 @@
 <template>
   <!--_______________________________________________________ navigation -->
 
-  <div class="navigation container-fluid">
+  <div class="navigation container-fluid container-ex">
     <div class="navi-items">
       <router-link to="/Landing">
         <img src="@/assets/icons/menu-icon-1.png" alt />

@@ -13,35 +13,35 @@
       <ul>
         <li @click="createAccount1 = !createAccount1">
           <div class="header">
-            <h3 class="fz-15 m-0">First Name</h3>
+            <h3 class="fz-15 fw-bold m-0">First Name</h3>
           </div>
           <div class="information-user">
-            <p class="text-left mt-1">{{firstName}}</p>
+            <p class="text-left fz-14 gray-text-color m-0">{{firstName}}</p>
           </div>
         </li>
         <li @click="createAccount2 = !createAccount2">
           <div class="header">
-            <h3 class="fz-15 m-0">Surname</h3>
+            <h3 class="fz-15 fw-bold m-0">Surname</h3>
           </div>
           <div class="information-user">
-            <p class="text-left mt-1">{{Surname}}</p>
+            <p class="text-left fz-14 gray-text-color m-0">{{Surname}}</p>
           </div>
         </li>
 
         <li @click="createAccount3 = !createAccount3">
           <div class="header">
-            <h3 class="fz-15 m-0">Phone Number</h3>
+            <h3 class="fz-15 fw-bold m-0">E-MAIL</h3>
           </div>
           <div class="information-user">
-            <p class="text-left mt-1">{{PhoneNumber}}</p>
+            <p class="text-left fz-14 gray-text-color m-0">{{Email}}</p>
           </div>
         </li>
         <li @click="createAccount4 = !createAccount4">
           <div class="header">
-            <h3 class="fz-15 m-0">Password</h3>
+            <h3 class="fz-15 fw-bold m-0">Password</h3>
           </div>
           <div class="information-user">
-            <p class="text-left mt-1"></p>
+            <p class="text-left fz-14 gray-text-color m-0"></p>
           </div>
         </li>
       </ul>
@@ -62,7 +62,7 @@ export default {
     return {
       firstName: "John",
       Surname: "Doe",
-      PhoneNumber: "+44-8520-66-77",
+      Email: "Pegah@Gmail.Com",
       createAccount1: false,
       createAccount2: false,
       createAccount3: false,

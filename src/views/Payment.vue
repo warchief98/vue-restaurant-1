@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid payment-container">
+  <div class="container-fluid container-ex payment-container">
     <header class="backAndEdit">
       <!-- back arrow -->
       <router-link to>

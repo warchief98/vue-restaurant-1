@@ -1,6 +1,6 @@
 <template>
   <div
-    class="payment-cmp-container container-fluid"
+    class="payment-cmp-container container-fluid container-ex"
     :class="{'payment-cmp-container-come':AddPayment}"
   >
     <header class="backAndEdit">

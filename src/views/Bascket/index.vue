@@ -1,6 +1,6 @@
 <template>
   <div class="bascket">
-    <div class="container-fluid">
+    <div class="container-fluid container-ex">
       <header class="backAndEdit">
         <!-- back arrow -->
         <router-link to>
@@ -16,10 +16,10 @@
       </header>
     </div>
     <!-- gray title -->
-    <div class="gray-bg container-fluid py-2">
+    <div class="gray-bg container-fluid container-ex py-2">
       <h3 class="fz-15 text-left m-0">Hungry Llama</h3>
     </div>
-    <section class="container-fluid">
+    <section class="container-fluid container-ex">
       <h4 class="fz-15 text-left py-2 m-0">Your Order</h4>
       <!-- bascket order component -->
       <bascket-order
@@ -48,7 +48,7 @@
       </div>
       <!-- add a note text area -->
       <textarea class="fz-13 gray-text-color" cols="30" rows="4" placeholder="Add a Note:"></textarea>
-      <div class="add-gift container-fluid">
+      <div class="add-gift container-fluid container-ex">
         <div class="row">
           <input type="text" class="col-7 mr-2 gray-text-color fz-12" placeholder="Enter Gift Code" />
           <button class="col">Apply</button>
@@ -59,11 +59,11 @@
     <div class="order-total-container">
       <div>
         <p
-          class="fz-12 py-3 text-left container-fluid"
+          class="fz-12 py-3 text-left container-fluid container-ex"
         >Any expires or used credit can be viewed in your account</p>
         <div class="order-total gray-bg">
-          <span class="fz-15 fw-bold text-left container-fluid">Order Total:</span>
-          <span class="fz-15 fw-bold text-right container-fluid">£16.05</span>
+          <span class="fz-15 fw-bold text-left container-fluid container-ex">Order Total:</span>
+          <span class="fz-15 fw-bold text-right container-fluid container-ex">£16.05</span>
         </div>
         <router-link to="/CheckOut">
           <button class="fz-15 lightBlue-bg">Go to Checkout</button>

@@ -31,7 +31,7 @@
           <input type="radio" name="selectDiet" value="halal" id="halal"  v-model="dietValue"/>
         </li>
       </ul>
-      <footer class="container-fluid">
+      <footer class="container-fluid container-ex">
         <button class="submit-btn lightBlue-bg mb-1" @click="dietaryClose">Apply</button>
       </footer>
     </div>

@@ -1,13 +1,13 @@
 <template>
   <div class="Account" :class="{'Account-come' : Account}">
     <!-- Account head -->
-    <div class="back-arrow" @click="AccountClose">
-      <img src="@/assets/icons/right-arrow.png" alt />
+    <div class="back-arrow container-ex" @click="AccountClose">
+      <img src="@/assets/icons/left-arrow-circle.png" alt />
     </div>
     <div class="Account-main">
     <div class="Account-head">
       <figure>
-        <img src="@/assets/icons/userAvatar.png" alt />
+        <img src="@/assets/icons/avatar.png" alt />
       </figure>
       <section>
         <h3 class="fz-15 dark-text-color">John Doe</h3>
@@ -17,7 +17,7 @@
     <!-- Account section -->
     <ul>
       <li @click="AccountDetails = !AccountDetails">Account Details</li>
-      <router-link to="/Payment"><li>Payment Methods</li></router-link>
+      <router-link to="/Payment"><li class="border-bottom-0">Payment Methods</li></router-link>
       <li @click="About = !About">About</li>
       <li @click="Help = !Help">Help</li>
       <li @click="signOut= !signOut">Sing Out</li>

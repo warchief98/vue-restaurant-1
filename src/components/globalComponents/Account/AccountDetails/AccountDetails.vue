@@ -3,7 +3,7 @@
     <!-- Account head -->
     <div class="Account-head-title">
       <figure @click="AccountDetailsClose">
-        <img src="@/assets/icons/right-arrow.png" alt />
+        <img src="@/assets/icons/left-arrow-circle.png" alt />
       </figure>
       <h1 class="fz-15 m-0">Account Details</h1>
       <button class="done-btn">Done</button>
@@ -11,7 +11,7 @@
     <div class="account-details-scroll-part">
       <div class="Account-head">
         <figure>
-          <img src="@/assets/icons/userAvatar.png" alt />
+          <img src="@/assets/images/Mauritius-Beachcombe.png" alt />
           <!-- edit profile's picture btn -->
           <figcaption @click="AccountDetails1 = !AccountDetails1" class="profile-btn">
             <img src="@/assets/icons/profile-btn-icon.png" alt />
@@ -23,7 +23,7 @@
         </section>
       </div>
       <!-- Account section -->
-      
+
       <div class="form-Details">
         <ul>
           <li @click="AccountDetailsPop2Show">
@@ -59,28 +59,21 @@
           <h3 class="fz-15">Social Account</h3>
           <ul>
             <li>
-              <div class="fz-15">
+              <div class="fz-15 d-flex align-items-center">
                 <img src="@/assets/icons/facebook-icon-2.png" alt />
                 Facebook
               </div>
               <button class="disconnect fz-12" @click="AccountDetails5 = true">Disconnect</button>
             </li>
-            <li>
-              <div class="fz-15">
-                <img src="@/assets/icons/google-icon.png" alt />
-                Google
-              </div>
-              <p class="fz-11 m-0">Not Connected</p>
-            </li>
           </ul>
         </footer>
       </div>
     </div>
-    <AccountDetails-pop1  :AccountDetails1="AccountDetails1"></AccountDetails-pop1>
-    <AccountDetails-pop2  :AccountDetails2="AccountDetails2"></AccountDetails-pop2>
-    <AccountDetails-pop3  :AccountDetails3="AccountDetails3"></AccountDetails-pop3>
-    <AccountDetails-pop4  :AccountDetails4="AccountDetails4"></AccountDetails-pop4>
-    <AccountDetails-pop5  :AccountDetails5="AccountDetails5"></AccountDetails-pop5>
+    <AccountDetails-pop1 :AccountDetails1="AccountDetails1"></AccountDetails-pop1>
+    <AccountDetails-pop2 :AccountDetails2="AccountDetails2"></AccountDetails-pop2>
+    <AccountDetails-pop3 :AccountDetails3="AccountDetails3"></AccountDetails-pop3>
+    <AccountDetails-pop4 :AccountDetails4="AccountDetails4"></AccountDetails-pop4>
+    <AccountDetails-pop5 :AccountDetails5="AccountDetails5"></AccountDetails-pop5>
   </div>
 </template>
 
@@ -99,16 +92,16 @@ export default {
       AccountDetails2: false,
       AccountDetails3: false,
       AccountDetails4: false,
-      AccountDetails5: false,
+      AccountDetails5: false
     };
   },
   methods: {
     AccountDetailsClose() {
       eventBus.$emit("AccountDetailsClose", false);
     },
-    AccountDetailsPop2Show(){
+    AccountDetailsPop2Show() {
       this.AccountDetails2 = true;
-    },
+    }
   },
   created() {
     eventBus.$on("AccountDetailsClose1", close => {
@@ -124,7 +117,7 @@ export default {
     eventBus.$on("AccountDetailsClose4", close => {
       this.AccountDetails4 = close;
     });
-     eventBus.$on("AccountDetailsClose5", close => {
+    eventBus.$on("AccountDetailsClose5", close => {
       this.AccountDetails5 = close;
     });
   }

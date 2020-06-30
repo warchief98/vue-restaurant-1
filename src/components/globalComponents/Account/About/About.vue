@@ -3,9 +3,9 @@
     <!-- About head -->
     <div class="about-head-title">
       <figure @click="aboutClose">
-        <img src="@/assets/icons/right-arrow.png" alt />
+        <img src="@/assets/icons/left-arrow-circle.png" alt />
       </figure>
-      <h1 class="fz-18 m-0">About</h1>
+      <h1 class="fz-15 m-0">About</h1>
     </div>
 
     <ul>

@@ -11,7 +11,7 @@
         <h1 class="fz-15 m-0">Write a Reviews</h1>
         <button class="done-btn fz-13">Send</button>
       </div>
-      <div class="container-fluid">      
+      <div class="container-fluid container-ex">      
         <div class="input-container">
           <input type="text" placeholder="Title" class="py-2" />
           <textarea name id cols="30" rows="10" placeholder="Review(optional)" class="py-2"></textarea>

@@ -1,11 +1,11 @@
 <template>
           <!--_______________________________________________________ main header -->
-        <div class="main-header container-fluid">
+        <div class="main-header container-fluid container-ex">
             <div class="row">
-                <div class="col-10 main-search">
+                <div class="main-search">
                     <img src="@/assets/icons/location.png" alt="">
                     
-                    <input type="text" placeholder="Lambeth, London SE1">
+                    <input class="fz-12" type="text" placeholder="Lambeth, London SE1">
                 </div>
 
                 <div class="col-2 menu-btn" @click="menuShow = !menuShow">

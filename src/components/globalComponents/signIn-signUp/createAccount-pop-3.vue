@@ -8,13 +8,13 @@
         <h1 class="fz-15 m-0">Create Account</h1>
       </header>
       <div class="forms">
-        <label class="fz-15" for="Email">Enter your email</label>
-        <input class="fz-15" type="email" id="Email" v-model="Email" />
+        <label class="fz-13 mb-3" for="Email">Email</label>
+        <input class="fz-14 pl-3" type="email" id="Email" v-model="Email" placeholder="test@test.com" />
       </div>
     </div>
 
     <footer>
-      <button class="submit-btn lightBlue-bg">Continue</button>
+      <button class="submit-btn lightBlue-bg fz-15">CONTINUE</button>
     </footer>
   </div>
 </template>

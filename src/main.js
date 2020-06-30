@@ -32,9 +32,15 @@ import orderDetails from './components/globalComponents/orders/orderDetails.vue'
 import deletePop from './components/globalComponents/orders/delete-pop.vue'
 import inviteFriends from './components/globalComponents/orders/inviteFriends.vue'
 import emailPop from './components/globalComponents/signIn-signUp/email-pop.vue'
+import facebookPrime from './components/globalComponents/signIn-signUp/facebook-permit.vue'
+import loginFacebook from './components/globalComponents/signIn-signUp/login-facebook.vue'
+import openFacebook from './components/globalComponents/signIn-signUp/open-facebook.vue'
+import confirmationFacebook from './components/globalComponents/signIn-signUp/confirmationFacebook.vue'
+import loginWithFacebook from './components/globalComponents/signIn-signUp/loginWithFacebook.vue'
 import passwordPop from './components/globalComponents/signIn-signUp/password-pop.vue'
 import forgetPassword from './components/globalComponents/signIn-signUp/forget-password'
 import verifyCode from './components/globalComponents/signIn-signUp/verify-code.vue'
+import verifyPhoneNumber from './components/globalComponents/signIn-signUp/verify-phone-number.vue'
 import createAccount from './components/globalComponents/signIn-signUp/create-account.vue'
 import createAccountPop1 from './components/globalComponents/signIn-signUp/createAccount-pop-1.vue'
 import createAccountPop2 from './components/globalComponents/signIn-signUp/createAccount-pop-2.vue'
@@ -88,9 +94,15 @@ Vue.component('orderDetails', orderDetails)
 Vue.component('delete-pop', deletePop)
 Vue.component('inviteFriends', inviteFriends)
 Vue.component('email-pop', emailPop)
+Vue.component('facebook-permit', facebookPrime)
+Vue.component('login-facebook', loginFacebook)
+Vue.component('open-facebook', openFacebook)
+Vue.component('confirmation-facebook', confirmationFacebook)
+Vue.component('login-with-facebook', loginWithFacebook)
 Vue.component('password-pop', passwordPop)
 Vue.component('forget-password', forgetPassword)
 Vue.component('verify-code', verifyCode)
+Vue.component('verify-phone-number', verifyPhoneNumber)
 Vue.component('create-account', createAccount)
 Vue.component('create-account-pop-1', createAccountPop1)
 Vue.component('create-account-pop-2', createAccountPop2)

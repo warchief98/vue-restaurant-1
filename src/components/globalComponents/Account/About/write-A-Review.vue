@@ -11,7 +11,7 @@
         <h1 class="fz-15 m-0">Write a Reviews</h1>
         <button class="done-btn fz-13">Send</button>
       </div>
-      <div class="container-fluid">
+      <div class="container-fluid container-ex">
         <!-- rating -->
         <div class="main-rating">
           <p>TAP A STAR TO RATE</p>

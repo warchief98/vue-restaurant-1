@@ -9,7 +9,7 @@
       <div class="header">
         <h2>Order Details</h2>
       </div>
-      <div class="container-fluid">
+      <div class="container-fluid container-ex">
         <div class="orderDetails-main">
           <div class="orderDerails-title">
             <h3>LowerMarshMarket</h3>

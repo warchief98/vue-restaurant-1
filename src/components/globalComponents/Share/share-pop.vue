@@ -36,7 +36,7 @@
           </carousel>
         </div>
       </div>
-      <div class="share-box-foot container-fluid">
+      <div class="share-box-foot container-fluid container-ex">
           <div class="copy-link">
             <p class="fz-13">Copy</p>
             <button class="done-btn"><img src="@/assets/icons/copy.png" alt=""></button>

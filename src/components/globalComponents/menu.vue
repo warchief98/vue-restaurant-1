@@ -41,7 +41,7 @@
           </router-link>
         </li>
         <li @click="closeMenu">
-          <router-link to="/Landing/LowerMarket">
+          <router-link to="/Landing/Market">
             <img src="@/assets/icons/market-icon.png" alt />
             MARKET
           </router-link>

@@ -1,5 +1,5 @@
 <template>
-  <div class="Upcoming container-fluid">
+  <div class="Upcoming container-fluid container-ex">
     <div class="Send-invite">
       <p>Invite your friends to YHM Express and arrange your lunch or dinner together!</p>
       <button class="done-btn" @click="invite = true">SEND INVITE</button>

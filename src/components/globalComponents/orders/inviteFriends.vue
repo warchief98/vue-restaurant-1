@@ -6,7 +6,7 @@
       </figure>
       <h1 class="fz-15 m-0">Invite Friends</h1>
     </header>
-    <div class="invite-main container-fluid">
+    <div class="invite-main container-fluid container-ex">
         <div class="invite-title">
              <h3>Eating together just tastes better</h3>
              <p>Invite your friends to YHM Express and arrange your lunch or dinner together!</p>
