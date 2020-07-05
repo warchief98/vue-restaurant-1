@@ -6,13 +6,13 @@
     </figure>
     <ul class="market-info fz-13">
       <li>
-        <img src="@/assets/icons/market-1.png" alt /> LowerMarsh Market
+        <img src="@/assets/icons/market-1.svg" alt /> LowerMarsh Market
       </li>
       <li>
-        <img src="@/assets/icons/market-2.png" alt /> Lambeth, London SE1.
+        <img src="@/assets/icons/pin.svg" alt /> Lambeth, London SE1.
       </li>
       <li>
-        <img src="@/assets/icons/market-3.png" alt /> Monday to Saturday - 9.00am to
+        <img src="@/assets/icons/market-3.svg" alt /> Monday to Saturday - 9.00am to
       </li>
       <li>17.00pm</li>
     </ul>

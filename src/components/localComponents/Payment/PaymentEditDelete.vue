@@ -1,18 +1,17 @@
 <template>
   <div>
-    <div class="dark-cover" v-if="PaymentEditDelete" @click="PaymentEditDeleteClose"></div>
+    <div class="dark-cover2" v-if="PaymentEditDelete" ></div>
     <div
       class="bascket-pop-up-container"
       :class="{'bascket-pop-up-container-come':PaymentEditDelete}"
     >
       <div class="edit-delete container-fluid container-ex">
         <div>
-          <h2 class="fz-18 fw-bold pb-3">Payment</h2>
-          <p class="fz-15">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          <h2 class="fz-18 fw-bold">Visa</h2>
         </div>
-        <div>
-          <button class="submit-btn lightBlue-bg">EDITE</button>
-          <button class="submit-btn-2">DELETE</button>
+        <div class="edit-btn-box">
+          <button class="submit-btn lightBlue-bg" @click="paymentEditShow">EDITE</button>
+          <button class="submit-btn-2" @click="paymentDeleteShow">DELETE</button>
         </div>
       </div>
     </div>
@@ -23,8 +22,14 @@ import { eventBus } from "@/main.js";
 export default {
   props: ["PaymentEditDelete"],
   methods: {
-    PaymentEditDeleteClose() {
+    paymentEditShow() {
       eventBus.$emit("PaymentEditDeleteClose", false);
+      eventBus.$emit("paymentEditShow", true);
+
+    },
+    paymentDeleteShow(){
+      eventBus.$emit("PaymentEditDeleteClose", false);
+      eventBus.$emit("paymentDeleteShow", true);
     }
   }
 };

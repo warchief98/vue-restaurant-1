@@ -1,6 +1,6 @@
 <template>
   <div class="market">
-    <h3 class="text-center fz-18 my-3">Market</h3>
+    <h3 class="text-center fz-18 fw-bold my-3">Market</h3>
     <!-- market block component 1 -->
     <div>
       <innerMarket></innerMarket>

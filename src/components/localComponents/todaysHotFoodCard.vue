@@ -14,11 +14,11 @@
           <p class="fz-10">4.8 Excellent(100)</p>
         </div>
       </div>
-      <p class="fz-12 gray-text-color m-0">Beautiful hand made arts and crafts from recycled materials.</p>
-      <p class="fz-12 gray-text-color m-0">Pice : £ £ - Pick Up.</p>
-      <p class="fz-12 gray-text-color m-0">Trading Days: Tuesday, Wednesday, Thursday, Friday</p>
+      <p class="fz-12 gray-text-color m-0 lh-15">Beautiful hand made arts and crafts from recycled materials.</p>
+      <p class="fz-12 gray-text-color m-0 lh-15">Pice : £ £ - Pick Up.</p>
+      <p class="fz-12 gray-text-color m-0 lh-15">Trading Days: Tuesday, Wednesday, Thursday, Friday</p>
       <div class="discount2">
-        <img src="@/assets/icons/discount.png" alt />
+        <img src="@/assets/icons/discount.svg" alt />
         <p class="fz-12 discount-text-color m-0">10% off</p>
       </div>
     </div>

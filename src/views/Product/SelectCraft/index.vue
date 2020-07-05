@@ -1,39 +1,42 @@
 <template>
   <div class="bot-menu-padding">
     <div class="container-fluid container-ex m-0 p-0">
-      <figure class="header-pic">
+      <figure class="header-pic m-0">
         <img src="@/assets/images/header-pic-2.jpg" alt />
-        <figcaption>
+        <figcaption class="bdrs-50">
           <router-link to="/Landing/Products">
-            <img src="@/assets/icons/left-arrow-circle.png" alt />
+            <img src="@/assets/icons/left-arrow-circle.svg" alt />
           </router-link>
         </figcaption>
       </figure>
     </div>
     <div>
       <div class="container-fluid container-ex select-food-main">
-        <div>
-          <h3 class="fz-20">Hungry Llama</h3>
-          <div class="rate">
-            <img src="@/assets/icons/star-green.png" alt />
-            <p class="fz-12">4.8 Excellent(100)</p>
+        <div class="select-food-title">
+          <div>
+            <h3 class="fz-20 fw-bold">Hungry Llama</h3>
+            <div class="rate">
+              <img src="@/assets/icons/star-green.png" alt />
+              <p class="fz-12">4.8 Excellent(100)</p>
+            </div>
           </div>
+          <p class="fz-18 gray-text-color const-height-45">Beautiful hand made arts and crafts from recycled materials. 
+          </p>
         </div>
 
-        <p class="fz-18 gray-text-color">Peruvian street food.</p>
+        
         <p class="m-0 fz-15">Pice : £ £ - Pick Up.</p>
         <p class="m-0 fz-15">Trading Days: Tuesday, Wednesday, Thursday, Friday</p>
         <p
-          class="info-pop-1 gray-text-color fz-13 gray-bg mt-3"
-        >We have a dream of presenting the wide diversity and fusion of Peruvian food, using the best and most authentic ingredients with a modern twist.</p>
-        <div class="discount2">
-          <img src="@/assets/icons/discount.png" alt />
+          class="info-pop-1 gray-text-color fz-13 gray-bg mt-3">I'm a mum of 💁‍♂️💁‍♂️💁‍♂️💁‍♀️💁‍♀️supporting creative mind of Africawomen who handmake Arts and crafts</p>
+        <div class="discount3">
+          <img src="@/assets/icons/discount.svg" alt />
           <p class="fz-15 discount-text-color m-0">10% off entir menu</p>
         </div>
       </div>
       <!-- _______________________________________menu -->
       <div class="container-fluid container-ex gray-bg">
-        <h2 class="fz-15 dark-text-color py-3 text-left">Hand Craft</h2>
+        <h2 class="fz-15 dark-text-color gray-titles text-left">Hand Craft</h2>
       </div>
 
       <div class="container-fluid container-ex">

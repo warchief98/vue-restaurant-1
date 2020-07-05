@@ -2,7 +2,7 @@
   <div>
     <div class="dark-cover" v-if="AccountDetails5">
         <figure @click="AccountDetailsClose5">
-            <img src="@/assets/icons/left-arrow-circle.png" alt="">
+            <img src="@/assets/icons/left-arrow-circle.svg" alt="">
         </figure>
     </div>
     <div class="signOut p-2" :class="{'signOut-come':AccountDetails5}">

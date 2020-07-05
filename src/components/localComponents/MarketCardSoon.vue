@@ -6,13 +6,13 @@
     </figure>
     <ul class="market-info fz-13">
       <li>
-        <img src="@/assets/icons/market-1.png" alt /> Comming Soon
+        <img src="@/assets/icons/market-1.svg" alt /> Comming Soon
       </li>
       <li>
-        <img src="@/assets/icons/market-2.png" alt /> ...
+        <img src="@/assets/icons/pin.svg" alt /> ...
       </li>
       <li>
-        <img src="@/assets/icons/market-3.png" alt /> ...
+        <img src="@/assets/icons/market-3.svg" alt /> ...
       </li>
       <li>...</li>
     </ul>

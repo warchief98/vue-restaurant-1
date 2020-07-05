@@ -2,7 +2,7 @@
   <div class="Share" :class="{'Share-come' : Share}">
     <div class="about-head-title">
       <figure @click="ShareClose">
-        <img src="@/assets/icons/right-arrow.png" alt />
+        <img src="@/assets/icons/left-arrow-circle.svg" alt />
       </figure>
       <h1 class="fz-15 m-0">Share</h1>
     </div>
@@ -14,8 +14,8 @@
         </div>
 
         <div class="Share-foot">
-          <h5>SEND INVATE</h5>
-          <button class="submit-btn lightBlue-bg" @click="sharePop = true">SHARE</button>
+          <h5 c>SEND INVATE</h5>
+          <button class="submit-btn lightBlue-bg fz-15" @click="sharePop = true">SHARE</button>
           <h5>OR COPY YOUR LINK</h5>
           <div class="copy-link">
             <p class="fz-13">{{ url }}</p>

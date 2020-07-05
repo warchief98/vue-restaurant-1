@@ -17,7 +17,7 @@
       <p class="fz-12 gray-text-color m-0">Pice : £ £ - Pick Up.</p>
       <p class="fz-12 gray-text-color m-0">Trading Days: Tuesday, Wednesday, Thursday, Friday</p>
       <div class="discount2">
-        <img src="@/assets/icons/discount.png" alt />
+        <img src="@/assets/icons/discount.svg" alt />
         <p class="fz-12 discount-text-color m-0">10% off</p>
       </div>
     </div>

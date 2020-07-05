@@ -2,15 +2,15 @@
   <div>
     <div class="dark-cover" v-if="signOut">
         <figure @click="signOutClose">
-            <img src="@/assets/icons/left-arrow-circle.png" alt="">
+            <img src="@/assets/icons/left-arrow-circle.svg" alt="">
         </figure>
     </div>
-    <div class="signOut p-2" :class="{'signOut-come':signOut}">
+    <div class="signOut" :class="{'signOut-come':signOut}">
       <div class="p-3">
-        <h3 class="fz-15 font-weight-bold">Sign Out</h3>
-        <p class="fz-13 ">Are you sure you want to sign out of your account?</p>
+        <h3 class="fz-18 font-weight-bold">Sign Out</h3>
+        <p class="fz-15">Are you sure you want to sign out of your account?</p>
       </div>
-      <button class="submit-btn lightBlue-bg">SIGN OUT</button>
+      <router-link to="/" class="w-100"><button class="submit-btn lightBlue-bg">SIGN OUT</button></router-link>
     </div>
   </div>
 </template>

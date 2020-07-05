@@ -7,21 +7,21 @@
       <!-- About head -->
       <div class="about-head-title">
         <figure @click="AboutRatingClose">
-          <img src="@/assets/icons/right-arrow.png" alt />
+          <img src="@/assets/icons/left-arrow-circle.svg" alt />
         </figure>
         <h1 class="fz-18 m-0">Rating&Reviews</h1>
       </div>
 
       <!--------------- main-head ---------------->
-      <div class="container">
+      <div class="container container-ex">
         <div class="main-head">
           <div class="d-flex">
             <figure>
-              <img src="@/assets/icons/userAvatar.png" alt />
+              <img src="@/assets/icons/YHM-Express-logo.png" alt />
             </figure>
-            <section>
-              <h3 class="fz-30">4.5</h3>
-              <p class="fz-12">out to 5</p>
+            <section class="d-flex flex-column align-items-center justify-content-center">
+              <h3 class="fz-53 fw-bold">4.5</h3>
+              <p class="fz-15 fw-bold">out to 5</p>
             </section>
           </div>
           <p class="rating-view">12,562 Rating</p>
@@ -29,7 +29,7 @@
 
         <!-- rating -->
         <div class="main-rating">
-          <p>TAP A STAR TO RATE</p>
+          <p class="fz-15 font-weight-normal">TAP A STAR TO RATE</p>
           <b-form-rating id="rating-inline" inline v-model="rating"></b-form-rating>
         </div>
         <!------- Write & review---->
@@ -49,6 +49,7 @@
       </div>
     </div>
     <write-reviews :writeReviews="writeReviews"></write-reviews>
+    <rating-write-a-review-succecful :RatingWriteReviewSuccecful="RatingWriteReviewSuccecful"></rating-write-a-review-succecful>
   </div>
 </template>
 
@@ -61,7 +62,8 @@ export default {
   data() {
     return {
       rating: "",
-      writeReviews: false
+      writeReviews: false,
+      RatingWriteReviewSuccecful: false,
     };
   },
   components: {
@@ -79,6 +81,12 @@ export default {
     eventBus.$on("writeReviewClose", close => {
       this.writeReviews = close;
     });
+    eventBus.$on('RatingWriteReviewSuccecfulOpen', open =>{
+      this.RatingWriteReviewSuccecful = open;
+    })
+    eventBus.$on('RatingWriteReviewSuccecfulClose', close =>{
+      this.RatingWriteReviewSuccecful = close;
+    })
   }
 };
 </script>

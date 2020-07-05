@@ -2,7 +2,7 @@
   <div class="invite" :class="{'invite-come': invite}">
     <header class="about-head-title">
       <figure @click="inviteClose">
-        <img src="@/assets/icons/right-arrow.png" alt />
+        <img src="@/assets/icons/left-arrow-circle.svg" alt />
       </figure>
       <h1 class="fz-15 m-0">Invite Friends</h1>
     </header>

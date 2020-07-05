@@ -4,7 +4,7 @@
       <header class="backAndEdit">
         <!-- back arrow -->
         <router-link to>
-          <img src="@/assets/icons/left-arrow-circle.png" alt />
+          <img src="@/assets/icons/left-arrow-circle.svg" alt />
         </router-link>
         <!-- title -->
         <h3>Bascket</h3>
@@ -41,10 +41,13 @@
       <!-- pick up time -->
       <div class="pick-up py-3">
         <div>
-          <img src="@/assets/icons/BlueWatch.png" alt />
-          <p class="fz-15 ml-4">Pickup in 20 minutes</p>
+          <img src="@/assets/icons/pickup-time.svg" alt />
+          <p class="fz-15">Pickup Time</p>
+          <div class="pickup-time d-flex align-items-center justify-content-center">
+            <p class="fz-12 m-0">4:55 PM</p>
+          </div>
         </div>
-        <button class="btn-style-1">Change</button>
+        <button class="btn-style-1" @click="changePickupTime = true">Choose</button>
       </div>
       <!-- add a note text area -->
       <textarea class="fz-13 gray-text-color" cols="30" rows="4" placeholder="Add a Note:"></textarea>
@@ -66,7 +69,7 @@
           <span class="fz-15 fw-bold text-right container-fluid container-ex">£16.05</span>
         </div>
         <router-link to="/CheckOut">
-          <button class="fz-15 lightBlue-bg">Go to Checkout</button>
+          <button class="fz-15 lightBlue-bg">GO TO CHECKOUT</button>
         </router-link>
       </div>
     </div>
@@ -78,6 +81,9 @@
 
     <!-- ______________________________________pick up pop up bascket component -->
     <PickUpPopUp :pickUpPopUp="pickUpPopUp"></PickUpPopUp>
+    <!---------------------------------update bascket -->
+    <update-bascket :updateBascket="updateBascket"></update-bascket>
+    <change-pickup-time :changePickupTime="changePickupTime"></change-pickup-time>
   </div>
 </template>
 <script>
@@ -92,7 +98,9 @@ export default {
       deleteOrder: false,
       editBtn: true,
       addMoreToBascket: false,
-      pickUpPopUp:false
+      pickUpPopUp: false,
+      updateBascket: false,
+      changePickupTime: false
     };
   },
   methods: {
@@ -119,17 +127,28 @@ export default {
       this.addMoreToBascket = show;
     });
 
-    eventBus.$on("AddMoreToBascketClose",(close=>{
+    eventBus.$on("AddMoreToBascketClose", close => {
       this.addMoreToBascket = close;
-    }))
+    });
 
     eventBus.$on("PickUpPopUpShow", show => {
       this.pickUpPopUp = show;
     });
 
-    eventBus.$on('PickUpClose',(close)=>{
+    eventBus.$on("PickUpClose", close => {
       this.pickUpPopUp = close;
-    })
+    });
+    eventBus.$on("UpdateBascketOpen", open => {
+      this.updateBascket = open;
+    });
+    eventBus.$on("updateBascketCloae", close => {
+      this.updateBascket = close;
+    });
+
+    eventBus.$on("pickTimeClose", close => {
+      this.changePickupTime = close;
+    });
+    
   }
 };
 </script>

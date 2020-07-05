@@ -2,12 +2,12 @@
   <div class="Account" :class="{'Account-come' : Account}">
     <!-- Account head -->
     <div class="back-arrow container-ex" @click="AccountClose">
-      <img src="@/assets/icons/left-arrow-circle.png" alt />
+      <img src="@/assets/icons/left-arrow-circle.svg" alt />
     </div>
     <div class="Account-main">
     <div class="Account-head">
       <figure>
-        <img src="@/assets/icons/avatar.png" alt />
+        <img src="@/assets/icons/avatar.svg" alt />
       </figure>
       <section>
         <h3 class="fz-15 dark-text-color">John Doe</h3>

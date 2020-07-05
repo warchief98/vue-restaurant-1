@@ -12,7 +12,7 @@
       <p class="fz-13 mb-3">Please sign up or log in with</p>
       <!-- facebook login -->
       <button class="login-btn blue-bg text-white my-2" @click="facebookPermit = true">
-        <img src="@/assets/icons/facebook-icon.png" alt />
+        <img src="@/assets/icons/facebook-icon.svg" alt />
         Continue with Facebook
       </button>
       <div class="lined-title-signOut fz-12 my-3"></div>

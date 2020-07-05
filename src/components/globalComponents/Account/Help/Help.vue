@@ -3,7 +3,7 @@
     <!-- About head -->
     <div class="about-head-title">
       <figure @click="HelpClose">
-        <img src="@/assets/icons/right-arrow.png" alt />
+        <img src="@/assets/icons/left-arrow-circle.svg" alt />
       </figure>
       <h1 class="fz-15 m-0">Help</h1>
     </div>
@@ -18,7 +18,7 @@
           <div class="FAQs-title-box">
             <h3 class="fz-15">Help With An Order</h3>
           </div>
-          <p>Lorem voluptatem totam ut doloribus quae et aliquam nobis, laboriosam blandielit saepe ducimus minus! Ab nesciunt soluta eligendi nisi obcaecati. Earum iste quaerat molestiae perspiciatis? Natus, neque incidunt.</p>
+          <p class="pb-0">Lorem voluptatem totam ut doloribus quae et aliquam nobis, laboriosam blandielit saepe ducimus minus! Ab nesciunt soluta eligendi nisi obcaecati. Earum iste quaerat molestiae perspiciatis? Natus, neque incidunt.Lorem voluptatem totam ut doloribus quae et aliquam nobis, laboriosam blandielit saepe ducimus minus! Ab nesciunt soluta eligendi nisi obcaecati. Earum iste quaerat molestiae perspiciatis? Natus, neque incidunt.</p>
           <div class="btn-box">
             <button class="done-btn fz-12" @click="WriteEmail = !WriteEmail">Write Email</button>
           </div>
@@ -38,6 +38,7 @@
       </div>
     </div>
     <WriteEmail  :WriteEmail="WriteEmail"></WriteEmail>
+    <About-Help-Write-Email :AboutHelpWriteEmail="AboutHelpWriteEmail"></About-Help-Write-Email>
   </div>
 </template>
 
@@ -48,7 +49,8 @@ export default {
   props: ["Help"],
   data() {
     return {
-      WriteEmail: false
+      WriteEmail: false,
+      AboutHelpWriteEmail: false,
     };
   },
   methods: {
@@ -60,6 +62,12 @@ export default {
     eventBus.$on("writeEmailClose", close => {
       this.WriteEmail = close;
     });
+    eventBus.$on("AboutHelpWriteEmail", open =>{
+      this.AboutHelpWriteEmail = open;
+    })
+    eventBus.$on('AboutHelpWriteEmailClose', close =>{
+      this.AboutHelpWriteEmail = close;
+    })
   }
 };
 </script>

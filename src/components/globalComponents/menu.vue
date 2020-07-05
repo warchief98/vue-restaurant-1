@@ -4,54 +4,63 @@
     :class="{'menuCome': sendMenu ,'over-flow':Account,'over-flow':dietaryShow,'over-flow':sorting1,'over-flow':sorting2,'over-flow':Share}"
   >
     <div class="menu-container">
-      <!-- menu head -->
-      <div class="menu-head">
-        <div class="d-flex">
-          <figure>
-            <img src="@/assets/icons/userAvatar.png" alt />
-          </figure>
-          <section>
-            <h3 class="fz-15">John Doe</h3>
-            <p class="fz-12">john.doe@gmail.com</p>
-          </section>
-        </div>
-        <button class="closeMenu-btn" @click="closeMenu">×</button>
-        <!-- <figure class="close-menu-btn" @click="closeMenu">
+      <div class="menu-head-container">
+        <!-- menu head -->
+        <div class="menu-head">
+          <div class="d-flex">
+            <figure>
+              <img src="@/assets/icons/userAvatar.svg" alt />
+            </figure>
+            <section>
+              <h3 class="fz-15">John Doe</h3>
+              <p class="fz-12">john.doe@gmail.com</p>
+            </section>
+          </div>
+          <button class="closeMenu-btn" @click="closeMenu">
+            <img class="m-0" src="@/assets/icons/close-icon.svg" alt @click="backShow" />
+          </button>
+          <!-- <figure class="close-menu-btn" @click="closeMenu">
         <img src="@/assets/icons/dietary-icon.png" alt="">
-        </figure>-->
+          </figure>-->
+        </div>
+        <!-- menu section -->
+        <ul class="container">
+          <li @click="Account = true">
+            <img src="@/assets/icons/account-icon.svg" alt />
+            ACCOUNT
+          </li>
+          <li>
+            <router-link to="/orders">
+              <img src="@/assets/icons/order-icon.svg" alt />
+              ORDER HISTORY
+            </router-link>
+          </li>
+          <li @click="closeMenu">
+            <router-link to="/Landing/Market">
+              <img src="@/assets/icons/market-icon.svg" alt />
+              MARKET
+            </router-link>
+          </li>
+          <li @click="Share = true">
+            <img src="@/assets/icons/share-icon.svg" alt />
+            SHARE
+          </li>
+        </ul>
       </div>
-      <!-- menu section -->
-      <ul class="container">
-        <li @click="dietaryShow = true">
-          <img src="@/assets/icons/dietary-icon.png" alt />
-          DIETARY
-        </li>
-        <li @click="sorting1 = true">
-          <img src="@/assets/icons/sorting-icon.png" alt />
-          SORTING
-        </li>
-        <li @click="Account = true">
-          <img src="@/assets/icons/account-icon.png" alt />
-          ACCOUNT
-        </li>
-        <li>
-          <router-link to="/orders">
-          <img src="@/assets/icons/order-icon.png" alt />
-          ORDER HISTORY
-          </router-link>
-        </li>
-        <li @click="closeMenu">
-          <router-link to="/Landing/Market">
-            <img src="@/assets/icons/market-icon.png" alt />
-            MARKET
-          </router-link>
-        </li>
-        <li @click="Share = true">
-          <img src="@/assets/icons/share-icon.png" alt />
-          SHARE
-        </li>
-      </ul>
+      <!-- footer -->
+      <footer>
+        <figure>
+          <img src="@/assets/icons/instagram.svg" alt />
+        </figure>
+        <figure>
+          <img src="@/assets/icons/facebook-icon.svg" alt />
+        </figure>
+        <figure>
+          <img src="@/assets/icons/twitter.svg" alt />
+        </figure>
+      </footer>
     </div>
+
     <!-- ________________________________pop up component import -->
     <!-- dietary pop up -->
     <Account-pop :Account="Account"></Account-pop>
@@ -83,6 +92,10 @@ export default {
   methods: {
     closeMenu() {
       eventBus.$emit("closeMenu", false);
+    },
+
+    backShow() {
+      eventBus.$emit("backShow", false);
     }
   },
   created() {

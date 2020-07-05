@@ -17,7 +17,7 @@
           </div>
           <div class="time-picker-container">
             <b-form-select v-model="selected" :options="options" class="time-picker"></b-form-select>
-            <img src="@/assets/icons/drop down.png" alt />
+            <img src="@/assets/icons/drop down.svg" alt />
           </div>
         </section>
       </div>

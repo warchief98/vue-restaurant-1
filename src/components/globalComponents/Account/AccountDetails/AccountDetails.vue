@@ -3,7 +3,7 @@
     <!-- Account head -->
     <div class="Account-head-title">
       <figure @click="AccountDetailsClose">
-        <img src="@/assets/icons/left-arrow-circle.png" alt />
+        <img src="@/assets/icons/left-arrow-circle.svg" alt />
       </figure>
       <h1 class="fz-15 m-0">Account Details</h1>
       <button class="done-btn">Done</button>
@@ -14,7 +14,7 @@
           <img src="@/assets/images/Mauritius-Beachcombe.png" alt />
           <!-- edit profile's picture btn -->
           <figcaption @click="AccountDetails1 = !AccountDetails1" class="profile-btn">
-            <img src="@/assets/icons/profile-btn-icon.png" alt />
+            <img src="@/assets/icons/profile-btn-icon.svg" alt />
           </figcaption>
         </figure>
         <section>
@@ -60,7 +60,7 @@
           <ul>
             <li>
               <div class="fz-15 d-flex align-items-center">
-                <img src="@/assets/icons/facebook-icon-2.png" alt />
+                <img src="@/assets/icons/facebook-icon-2.svg" alt />
                 Facebook
               </div>
               <button class="disconnect fz-12" @click="AccountDetails5 = true">Disconnect</button>

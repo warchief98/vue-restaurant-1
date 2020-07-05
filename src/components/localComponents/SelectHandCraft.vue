@@ -6,6 +6,7 @@
       </figure>
       <div>
         <h4 class="fz-15">Africans Fan</h4>
+        <p class="fz-15 gray-text-color pt-3">made of back of a tree</p>
         <div class="price-container">
           <span class="price fz-15">£8.85</span>
           <span class="offer-price fz-15">£6.85</span>
@@ -17,11 +18,11 @@
   </div>
 </template>
 <script>
-import { eventBus } from '@/main.js'
+import { eventBus } from "@/main.js";
 export default {
-  methods:{
-    AddToBascketTrue(){
-      eventBus.$emit('AddToBascketTrue',true)
+  methods: {
+    AddToBascketTrue() {
+      eventBus.$emit("AddToBascketTrue", true);
     }
   }
 };

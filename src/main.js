@@ -20,10 +20,12 @@ import AccountDetailsPop5 from './components/globalComponents/Account/AccountDet
 import About from './components/globalComponents/Account/About/About.vue'
 import RatingAndReviews from './components/globalComponents/Account/About/Rating&Reviews.vue'
 import writeReviews from './components/globalComponents/Account/About/write-A-Review.vue'
+import RatingWriteReviewSuccecful from './components/globalComponents/Account/About/rating-write-a-review-succecful.vue'
 import FAQs from './components/globalComponents/Account/About/FAQs.vue'
 import signOut from './components/globalComponents/Account/signOut.vue'
 import Help from './components/globalComponents/Account/Help/Help.vue'
 import WriteEmail from './components/globalComponents/Account/Help/writeAnEmail.vue'
+import AboutHelpWriteEmail from './components/globalComponents/Account/Help/ABOUT-help-write-email.vue'
 import Share from './components/globalComponents/Share/Share.vue'
 import sharePop from './components/globalComponents/Share/share-pop.vue'
 import Upcoming from './components/globalComponents/orders/Upcoming.vue'
@@ -51,6 +53,8 @@ import { Carousel, Slide } from "vue-carousel"
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import ViewBaskectSmall from './components/globalComponents/Bascket/ViewBaskectSmall.vue'
 import AddMoreToBascket from './components/globalComponents/Bascket/AddMoreToBascket.vue'
+import updateBascket from './components/globalComponents/Bascket/update-bascket.vue'
+import changePickupTime from './components/globalComponents/Bascket/change-pickup-time.vue'
 import PickUpPopUp from './components/globalComponents/Bascket/PickUpPopUp.vue'
 import BascketOrder from './components/globalComponents/Bascket/BascketOrder.vue'
 import Suggestion from './components/globalComponents/Bascket/Suggestion.vue'
@@ -73,16 +77,20 @@ Vue.component('AccountDetails-pop5', AccountDetailsPop5)
 Vue.component('account-about', About)
 Vue.component('rating-reviews', RatingAndReviews)
 Vue.component('write-reviews', writeReviews)
+Vue.component('rating-write-a-review-succecful', RatingWriteReviewSuccecful)
 Vue.component('FAQs', FAQs)
 Vue.component('signOut', signOut)
 Vue.component('Help', Help)
 Vue.component('WriteEmail', WriteEmail)
+Vue.component('About-Help-Write-Email', AboutHelpWriteEmail)
 Vue.component('Share', Share)
 Vue.component('share-pop', sharePop)
 Vue.component('carousel', Carousel);
 Vue.component('slide', Slide);
 Vue.component('view-bascket-small', ViewBaskectSmall)
 Vue.component('AddMoreToBascket', AddMoreToBascket)
+Vue.component('update-bascket', updateBascket)
+Vue.component('change-pickup-time', changePickupTime)
 Vue.component('PickUpPopUp', PickUpPopUp)
 Vue.component('bascket-order', BascketOrder)
 Vue.component('Suggestion', Suggestion)
@@ -111,7 +119,6 @@ Vue.component('create-account-pop-4', createAccountPop4)
 
 
 Vue.use(VueCarousel);
-
 // Install BootstrapVue
 Vue.use(BootstrapVue)
     // Optionally install the BootstrapVue icon components plugin

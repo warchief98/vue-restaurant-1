@@ -4,15 +4,13 @@
     <div class="write-review" :class="{'write-review-come':WriteEmail}">
       <!-- write a reviws head -->
       <div
-        class="Account-head-title pt-3 pb-2"
-        style="border-bottom:2px solid rgba(128, 128, 128, 0.400) "
-      >
-        <button class="done-btn fz-13" @click="writeEmailClose">Cancel</button>
+        class="write-review-head pt-3 pb-2">
+        <button class="done-btn fz-13 lightBlue-color" @click="writeEmailClose">Cancel</button>
         <h1 class="fz-15 m-0">Write a Reviews</h1>
-        <button class="done-btn fz-13">Send</button>
+        <button class="done-btn fz-13 lightBlue-color" @click="AboutHelpWriteEmail">Send</button>
       </div>
       <div class="container-fluid container-ex">      
-        <div class="input-container">
+        <div class="input-container mt-58px">
           <input type="text" placeholder="Title" class="py-2" />
           <textarea name id cols="30" rows="10" placeholder="Review(optional)" class="py-2"></textarea>
         </div>
@@ -32,6 +30,10 @@ export default {
   },
   methods: {
     writeEmailClose() {
+      eventBus.$emit("writeEmailClose", false);
+    },
+    AboutHelpWriteEmail(){
+      eventBus.$emit('AboutHelpWriteEmail', true);
       eventBus.$emit("writeEmailClose", false);
     }
   }

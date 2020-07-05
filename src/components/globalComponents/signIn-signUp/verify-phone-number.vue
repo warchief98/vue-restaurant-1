@@ -2,13 +2,13 @@
   <div class="email" :class="{'email-come': verifyPhoneNumber}">
     <header class="about-head-title border-0">
       <figure @click="verifyPhoneNumberClose">
-        <img src="@/assets/icons/right-arrow.png" alt />
+        <img src="@/assets/icons/left-arrow-circle.svg" alt />
       </figure>
       <h1 class="fz-15 m-0">Verify Phone Number</h1>
     </header>
     <div class="main-email">
-      <div class="main-title m-0">
-        <p class="m-b-21 fz-13 lh-16">
+      <div class="main-title">
+        <p class="fz-13 lh-16">
           We need to send 6-digit code to your phone to help.
         </p>
       </div>

@@ -3,16 +3,16 @@
     <!-- About head -->
     <div class="about-head-title">
       <figure @click="FAQsClose">
-        <img src="@/assets/icons/right-arrow.png" alt />
+        <img src="@/assets/icons/left-arrow-circle.svg" alt />
       </figure>
       <h1 class="fz-15 m-0">Frequently Asked Questions</h1>
     </div>
     <div class="FAQs-container">
       <ul>
-        <li>Covid-19</li>
-        <li>About YMH Express</li>
-        <li>Question About Order</li>
-        <li>Anything Else?</li>
+        <li class="fz-13">Covid-19</li>
+        <li class="fz-13">About YMH Express</li>
+        <li class="fz-13">Question About Order</li>
+        <li class="fz-13">Anything Else?</li>
       </ul>
       <div>
         <div class="FAQs-box">

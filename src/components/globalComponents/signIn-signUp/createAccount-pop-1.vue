@@ -3,7 +3,7 @@
     <div class="forms-box">
       <header class="about-head-title border-0">
         <figure @click="createAccountFirstNameClose">
-          <img src="@/assets/icons/right-arrow.png" alt />
+          <img src="@/assets/icons/left-arrow-circle.svg" alt />
         </figure>
         <h1 class="fz-15 m-0">Create Account</h1>
       </header>
