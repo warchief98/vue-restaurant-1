@@ -4,22 +4,27 @@
   <div class="navigation container-fluid container-ex">
     <div class="navi-items">
       <router-link to="/Landing">
+        <img src="@/assets/icons/home.svg" alt="">
         <img src="@/assets/icons/menu-icon-1.svg" alt />
+        
       </router-link>
     </div>
     <div class="navi-items">
       <router-link to="/filter">
         <img src="@/assets/icons/menu-icon-2.svg" alt />
+        <img src="@/assets/icons/filter selected.svg" alt="">
       </router-link>
     </div>
     <div class="navi-items">
       <router-link to="/orders">
         <img src="@/assets/icons/menu-icon-3.svg" alt />
+        <img src="@/assets/icons/order-selected.svg" alt="">
       </router-link>
     </div>
     <div class="navi-items">
       <router-link  to="/searchMarket">
         <img src="@/assets/icons/menu-icon-4.svg" alt />
+        <img src="@/assets/icons/search market-selected.svg" alt="">
       </router-link>
     </div>
 

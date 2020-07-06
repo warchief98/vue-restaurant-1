@@ -1,6 +1,6 @@
 <template>
   <!-- market-card component 1-->
-  <div class="market-card">
+  <div class="market-card m-0">
     <figure>
       <img src="@/assets/images/market-1.jpg" alt />
     </figure>
@@ -8,14 +8,14 @@
       <ul class="market-info fz-13">
         <li>LowerMarsh Market</li>
         <li>
-          <img src="@/assets/icons/location2.svg" alt /> Lambeth, London SE1.
+          <img src="@/assets/icons/pin.svg" alt /> Lambeth, London SE1.
         </li>
         <li>
           <img src="@/assets/icons/market-3.svg" alt /> Monday to Saturday - 9.00am to
         </li>
         <li>17.00pm</li>
       </ul>
-      <div class="market-icons">
+      <!-- <div class="market-icons">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="13"
@@ -53,7 +53,7 @@
             fill-rule="evenodd"
           />
         </svg>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>

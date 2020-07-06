@@ -5,6 +5,7 @@ import router from './router'
 import store from './store'
 import './assets/scss/main.scss'
 import Header from './components/globalComponents/Header.vue'
+import Header2 from './components/globalComponents/Header2.vue'
 import Navigation from './components/globalComponents/Navigation.vue'
 import Menu from './components/globalComponents/menu.vue'
 import DietaryPop from './components/globalComponents/DietaryPop.vue'
@@ -62,6 +63,7 @@ import Suggestion from './components/globalComponents/Bascket/Suggestion.vue'
 
 // import Global components
 Vue.component('app-header', Header)
+Vue.component('app-header-2', Header2)
 Vue.component('app-nav', Navigation)
 Vue.component('app-menu', Menu)
 Vue.component('dietary-pop', DietaryPop)

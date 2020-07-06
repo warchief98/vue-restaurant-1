@@ -43,9 +43,9 @@
         <h3 class="select-subtitle fz-15 text-left mb-3">Most Popular</h3>
 
         <!-- with offer price -->
-        <SelectMenu v-for="offre in 2" :key="offre" class="offer"></SelectMenu>
+        <SelectMenu v-for="(offer,index) in 2" :key="offer + index" class="offer"></SelectMenu>
         <!-- without offer price -->
-        <SelectMenu v-for="offre2 in 2" :key="offre2" class="added-number"></SelectMenu>
+        <SelectMenu v-for="(offer2,index) in 2" :key="offer2 + index" class="added-number"></SelectMenu>
       </div>
 
       <!-- _______________________________________salad box -->
@@ -56,9 +56,9 @@
 
       <div class="container-fluid container-ex">
         <!-- with offer price -->
-        <SelectSalad v-for="salad in 2" :key="salad" class="offer added-number"></SelectSalad>
+        <SelectSalad v-for="(salad,index) in 2" :key="salad + index" class="offer added-number"></SelectSalad>
         <!-- without offer price -->
-        <SelectSalad v-for="salad2 in 2" :key="salad2" class="added-number"></SelectSalad>
+        <SelectSalad v-for="(salad2,index) in 2" :key="salad2 + index" class="added-number"></SelectSalad>
       </div>
 
       <!-- _______________________________________cold drink -->

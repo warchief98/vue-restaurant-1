@@ -1,6 +1,6 @@
 <template>
   <div class="searchMarket">
-    <app-header></app-header>
+    <app-header-2></app-header-2>
     <div class="main-searchMarket container-fluid container-ex">
       <header>
         <h3 class="fz-18">Top markets Categories</h3>
