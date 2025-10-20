@@ -1,365 +1,369 @@
-@import 'node_modules/bootstrap/scss/bootstrap';
-@import 'node_modules/bootstrap-vue/src/index.scss';
-@import './style.scss';
-@import './style2.scss';
-@import './login';
-@import './select-food';
+$custom-control-indicator-size: 1.5rem !default;
+$b-custom-control-indicator-size-lg: $custom-control-indicator-size * 1.25 !default;
+
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/bootstrap-vue/src/index.scss";
+@import "./style.scss";
+@import "./style2.scss";
+@import "./login";
+@import "./select-food";
 @font-face {
-    font-family: Lato;
-    src: url(../fonts/Lato-Regular.ttf);
+  font-family: Lato;
+  src: url(../fonts/Lato-Regular.ttf);
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Lato;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Lato;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 p {
-    margin: 0;
+  margin: 0;
 }
 
 .title-new-icon {
-    margin: 0;
-    margin-left: 5px;
-    border-radius: 50%;
-    width: 32px;
-    height: 32px;
+  margin: 0;
+  margin-left: 5px;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
 }
 
 .bot-menu-padding {
-    padding-bottom: 75px;
+  padding-bottom: 75px;
 }
 
 .border-silver {
-    display: inline-block;
-    width: 100%;
-    height: 1px;
-    margin: 5px 0;
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  margin: 5px 0;
 }
 
 .main-wrapper {
-    position: relative;
-    padding-bottom: 75px !important;
-    padding-top: 100px !important;
-    .Landing {
-        width: 100%;
-        height: 100vh;
-        overflow: hidden;
-    }
+  position: relative;
+  padding-bottom: 75px !important;
+  padding-top: 100px !important;
+  .Landing {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
 }
 
 .container-ex {
-    padding: 0 13px;
+  padding: 0 13px;
 }
 
 .submit-btn {
-    outline: none !important;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    width: 100%;
-    height: 45px;
+  outline: none !important;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 45px;
 }
 
 .submit-btn-2 {
-    outline: none !important;
-    color: #07c0f6;
-    border: 1px solid #07c0f6;
-    background-color: #fff;
-    border-radius: 5px;
-    width: 100%;
-    height: 56px;
-    margin-top: 15px;
+  outline: none !important;
+  color: #07c0f6;
+  border: 1px solid #07c0f6;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 100%;
+  height: 56px;
+  margin-top: 15px;
 }
 
 .done-btn {
-    color: #07c0f6;
-    background: transparent;
-    border: none;
-    outline: none !important;
-    cursor: pointer;
+  color: #07c0f6;
+  background: transparent;
+  border: none;
+  outline: none !important;
+  cursor: pointer;
 }
 
 .closeMenu-btn {
-    background: transparent;
-    color: white;
-    border: none;
-    outline: none !important;
-    font-size: 35px;
-    cursor: pointer;
+  background: transparent;
+  color: white;
+  border: none;
+  outline: none !important;
+  font-size: 35px;
+  cursor: pointer;
 }
 
 .select-btn {
-    width: 100%;
-    border: 1px solid black;
-    border-radius: 5px;
-    background: white;
-    color: black;
-    padding: 10px;
-    font-size: 13px;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+  background: white;
+  color: black;
+  padding: 10px;
+  font-size: 13px;
 }
 
 .over-flow {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .lower-marsh {
-    overflow: hidden;
-    margin-bottom: 8px;
+  overflow: hidden;
+  margin-bottom: 8px;
 }
 
 .todays-hot {
-    overflow: hidden;
-    margin-bottom: 8px;
+  overflow: hidden;
+  margin-bottom: 8px;
 }
 
 .product {
-    overflow: hidden;
-    margin-bottom: 8px;
+  overflow: hidden;
+  margin-bottom: 8px;
 }
 
 .lh-11 {
-    line-height: 11px;
+  line-height: 11px;
 }
 
 .lh-15 {
-    line-height: 15px;
+  line-height: 15px;
 }
 
 .lh-16 {
-    line-height: 16px;
+  line-height: 16px;
 }
 
 .lh-24 {
-    line-height: 24px !important;
+  line-height: 24px !important;
 }
 
 .fz-53 {
-    font-size: 53px;
+  font-size: 53px;
 }
 
 .fz-30 {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .fz-20 {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .fz-18 {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .fz-17 {
-    font-size: 17px;
+  font-size: 17px;
 }
 
 .fz-16 {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .fz-15 {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 .fz-14 {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .fz-13 {
-    font-size: 13px;
+  font-size: 13px;
 }
 
 .fz-12 {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .fz-11 {
-    font-size: 11px;
+  font-size: 11px;
 }
 
 .fz-10 {
-    font-size: 10px;
+  font-size: 10px;
 }
 
 .fw-bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 // color classes
 .dark-text-color {
-    color: #031B40;
+  color: #031b40;
 }
 
 .gray-text-color {
-    color: #909399;
+  color: #909399;
 }
 
 .gray-bg {
-    background-color: #F2F5FC;
+  background-color: #f2f5fc;
 }
 
 .green-text-color {
-    color: #26C99A !important;
+  color: #26c99a !important;
 }
 
 .discount-text-color {
-    color: #C93A5C;
+  color: #c93a5c;
 }
 
 .red-bg {
-    background-color: #C93A5C;
+  background-color: #c93a5c;
 }
 
 .lightBrown-color {
-    color: #C9751C;
+  color: #c9751c;
 }
 
 .lightBrown-bg {
-    background-color: #fff;
-    background-color: #C9751C;
+  background-color: #fff;
+  background-color: #c9751c;
 }
 
 .gold-color {
-    color: #C9BF1C;
+  color: #c9bf1c;
 }
 
 .gold-bg {
-    background-color: #C9BF1C;
+  background-color: #c9bf1c;
 }
 
 .dark-color {
-    color: #2F3033;
+  color: #2f3033;
 }
 
 .darkBlue-bg {
-    background-color: rgb(3, 27, 65);
+  background-color: rgb(3, 27, 65);
 }
 
 .darkBlue-color {
-    color: rgb(3, 27, 65);
+  color: rgb(3, 27, 65);
 }
 
 .blue-bg {
-    background-color: #4167b2 !important;
+  background-color: #4167b2 !important;
 }
 
 .blue-bgc {
-    background-color: #264D9A;
+  background-color: #264d9a;
 }
 
 .blue-color {
-    color: #264D9A;
+  color: #264d9a;
 }
 
 .blue-med-color {
-    color: #2283F5;
+  color: #2283f5;
 }
 
 .lightBlue-bg {
-    background-color: #07C1F6;
+  background-color: #07c1f6;
 }
 
 .lightBlue-color {
-    color: #07C1F6 !important;
+  color: #07c1f6 !important;
 }
 
 .lightGreen-bg {
-    background-color: #26C99A;
+  background-color: #26c99a;
 }
 
 .lightGreen-color {
-    color: #26C99A;
+  color: #26c99a;
 }
 
 .lightRed-bg {
-    background-color: #C93A5C;
+  background-color: #c93a5c;
 }
 
 .border-color {
-    border-color: #DCDFE5;
+  border-color: #dcdfe5;
 }
 
 .count-btn {
-    width: 16px;
-    height: 16px;
-    border-radius: 5px;
-    font-size: 12px;
+  width: 16px;
+  height: 16px;
+  border-radius: 5px;
+  font-size: 12px;
 }
 
 .btn-style-1 {
-    border: none;
-    outline: none !important;
-    @extend .lightBlue-color;
-    background-color: transparent;
-    @extend .fz-13;
-    min-width: 40px;
-    img {}
+  border: none;
+  outline: none !important;
+  @extend .lightBlue-color;
+  background-color: transparent;
+  @extend .fz-13;
+  min-width: 40px;
+  img {
+  }
 }
 
 .btn-style-2 {
-    @extend .fz-15;
-    @extend .lightBrown-bg;
-    width: 110px;
-    height: 50px;
-    border: none;
-    outline: none !important;
-    color: white;
-    border-radius: 5px;
-    color: #07c0f6 !important;
+  @extend .fz-15;
+  @extend .lightBrown-bg;
+  width: 110px;
+  height: 50px;
+  border: none;
+  outline: none !important;
+  color: white;
+  border-radius: 5px;
+  color: #07c0f6 !important;
 }
 
 .m-b-21 {
-    margin-bottom: 21px;
+  margin-bottom: 21px;
 }
 
 .m-t-8 {
-    margin-top: 8px;
+  margin-top: 8px;
 }
 
 .p-x-19 {
-    padding: 0 19px;
+  padding: 0 19px;
 }
 
 .p-x-73 {
-    padding: 0 73px;
+  padding: 0 73px;
 }
 
 .p-t-20 {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
 .p-l-8 {
-    padding-left: 8px;
+  padding-left: 8px;
 }
 
 .p-l-23 {
-    padding-left: 23px;
+  padding-left: 23px;
 }
 
 .height-38 {
-    height: 38px;
+  height: 38px;
 }
 
 .border-black {
-    display: inline-block;
-    width: 135px;
-    height: 5px;
-    background-color: #020204;
-    margin: 10px 0;
-    border-radius: 20px;
+  display: inline-block;
+  width: 135px;
+  height: 5px;
+  background-color: #020204;
+  margin: 10px 0;
+  border-radius: 20px;
 }
 
 .bdrs-50 {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .z-index-0 {
-    z-index: 0;
+  z-index: 0;
 }
